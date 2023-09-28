@@ -1,7 +1,11 @@
+// INSPIR URL: https://funko.com/
+
+import Home from "./pages/home";
+
 function App() {
   return (
     <>
-      <div>Hello Reem and Guy 🐒</div>
+      <Home />
     </>
   );
 }
