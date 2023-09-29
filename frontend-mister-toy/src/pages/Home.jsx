@@ -1,4 +1,5 @@
-function Home() {
-  return <div>Home</div>;
+import styles from "./../assets/Home.module.css";
+
+export default function home() {
+  return <div className={styles.home}>Home</div>;
 }
-export default Home;
