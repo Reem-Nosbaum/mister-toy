@@ -1,12 +1,14 @@
 import styles from "../assets/NavBar.module.css";
 import logo from "../logoRamos.png";
+import Button from "../UI/Button";
 export default function NavBar() {
   return (
     <div className={styles.nav}>
       <img className={styles.logo} src={logo} alt="Logo" />
-      <button className={styles.button}>Pops</button>
-      <button className={styles.button}>About</button>
-      <button className={styles.button}>Filter By</button>
+      <Button to={"Toys"}>Pops</Button>
+      <Button to={"About"}>About</Button>
+      <Button to={"FilterBy"}>Filter By</Button>
+
       <input className={styles.search} placeholder="Search"></input>
     </div>
   );

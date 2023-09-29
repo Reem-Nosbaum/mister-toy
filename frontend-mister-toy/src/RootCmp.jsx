@@ -1,13 +1,13 @@
 // INSPIR URL: https://funko.com/
 
+import { Outlet } from "react-router-dom";
 import NavBar from "./pages/NavBar";
-// import Home from "./pages/home";
 
 export function RootCmp() {
   return (
-    <>
-      {/* <Home /> */}
+    <main>
       <NavBar />
-    </>
+      <Outlet />
+    </main>
   );
 }
