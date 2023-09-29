@@ -4,8 +4,10 @@ import Button from "../UI/Button";
 export default function NavBar() {
   return (
     <div className={styles.nav}>
-      <img className={styles.logo} src={logo} alt="Logo" />
-      <Button to={"Toys"}>Pops</Button>
+      <Button to={"/"}>
+        <img className={styles.logo} src={logo} alt="Logo" />
+      </Button>
+      <Button to={"Pops"}>Pops</Button>
       <Button to={"About"}>About</Button>
       <Button to={"FilterBy"}>Filter By</Button>
 
