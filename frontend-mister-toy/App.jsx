@@ -1,10 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { RootCmp } from "./src/RootCmp";
 import Home from "./src/pages/home";
-import Pops from "./src/pages/Pops";
+// import Pops from "./src/pages/Pops";
 import About from "./src/pages/About";
 import FilterBy from "./src/pages/FilterBy.jsx";
 import { ChakraProvider } from "@chakra-ui/react";
+import PopList from "./src/components/PopList";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/Pops",
-        element: <Pops />,
+        element: <PopList />,
       },
       {
         path: "About",
