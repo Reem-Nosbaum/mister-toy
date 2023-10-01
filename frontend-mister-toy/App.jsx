@@ -4,6 +4,7 @@ import Home from "./src/pages/home";
 import Pops from "./src/pages/Pops";
 import About from "./src/pages/About";
 import FilterBy from "./src/pages/FilterBy.jsx";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
+  );
 }
 
 export default App;

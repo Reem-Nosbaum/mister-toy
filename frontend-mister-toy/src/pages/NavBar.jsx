@@ -5,7 +5,7 @@ import logo from "../assets/logo-site.png";
 export default function NavBar() {
   return (
     <div className={styles.nav}>
-      <Link className={styles.logo} to={"/"}>
+      <Link to={"/"}>
         <img className={styles.logo} src={logo}></img>
       </Link>
 
