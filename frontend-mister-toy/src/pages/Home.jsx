@@ -5,15 +5,9 @@ export default function Home() {
   return (
     <>
       <h1 className={styles.h1}>New Picks for You!</h1>
-      <li className={styles.cards}>
+      <div className={styles.cards}>
         <PopCard />
-        <PopCard />
-        <PopCard />
-        <PopCard />
-        <PopCard />
-        <PopCard />
-        <PopCard />
-      </li>
+      </div>
     </>
   );
 }
