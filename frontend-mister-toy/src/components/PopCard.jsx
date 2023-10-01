@@ -11,7 +11,6 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import pop from "../assets/pop_green_ranger.png";
-import PopList from "./PopList";
 
 function PopCard() {
   return (
