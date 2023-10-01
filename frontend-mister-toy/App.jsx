@@ -6,6 +6,8 @@ import About from "./src/pages/About";
 import FilterBy from "./src/pages/FilterBy.jsx";
 import { ChakraProvider } from "@chakra-ui/react";
 import PopList from "./src/components/PopList";
+import { Provider } from "react-redux";
+import store from "././src/store/store";
 
 const router = createBrowserRouter([
   {
@@ -33,9 +35,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <ChakraProvider>
-      <RouterProvider router={router} />
-    </ChakraProvider>
+    <Provider store={store}>
+      <ChakraProvider>
+        <RouterProvider router={router} />
+      </ChakraProvider>
+    </Provider>
   );
 }
 
