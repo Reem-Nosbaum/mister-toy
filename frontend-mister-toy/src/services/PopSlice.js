@@ -5,6 +5,7 @@ const PopSlice = createSlice({
   initialState: [],
   reducers: {
     setPops: (state, action) => {
+      console.log(action.payload);
       return action.payload;
     },
   },

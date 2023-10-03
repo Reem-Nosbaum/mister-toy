@@ -6,14 +6,19 @@ function PopList() {
   const dispatch = useDispatch();
   const Pops = useSelector((state) => state.Pops);
 
-  useEffect(() => {
+  function LoadPop() {
     fetch("http://localhost:8000/funko_pops")
       .then((response) => response.json())
       .then((data) => {
-        dispatch(setPops(data.slice(0, 4)));
+        dispatch(setPops(data.slice(0, 15)));
       })
       .catch((error) => console.error("Error fetching data:", error));
-  }, [dispatch]);
+  }
+
+  useEffect(() => {
+    if (!Pops.length) LoadPop();
+  }, []);
+
   return (
     <div>
       <ul>

@@ -9,24 +9,25 @@ import {
   Divider,
   Button,
   SimpleGrid,
+  Flex,
 } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 
 function PopCard() {
   const Pops = useSelector((state) => state.Pops);
-  console.log(Pops);
 
   return (
-    <div>
+    <Flex>
       {Pops.map((pop) => (
         <div key={pop.handle}>
           <SimpleGrid
-            width={250}
+            maxW={250}
+            maxH={500}
             spacing="4"
             margin={2}
             templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
           >
-            <Card>
+            <Card maxH={500} maxW={200}>
               <CardBody>
                 <Image src={pop.imageName} borderRadius="lg" />
                 <Stack mt="6" spacing="4">
@@ -47,7 +48,7 @@ function PopCard() {
           </SimpleGrid>
         </div>
       ))}
-    </div>
+    </Flex>
   );
 }
 
