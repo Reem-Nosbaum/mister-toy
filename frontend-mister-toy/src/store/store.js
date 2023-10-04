@@ -1,10 +1,8 @@
-import { configureStore } from "@reduxjs/toolkit";
-import PopReducer from "../services/PopSlice.js";
+import { configureStore } from '@reduxjs/toolkit'
+import popReducer from './pop/popSlice'
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    Pops: PopReducer,
+    pop: popReducer,
   },
-});
-
-export default store;
+})
