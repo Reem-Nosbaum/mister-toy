@@ -1,7 +1,7 @@
 import { httpService } from "./httpService";
 
 async function getPops() {
-  return httpService.get("pop?_limit=100");
+  return httpService.get("pop?_limit=3");
 }
 
 async function getById(popId) {
