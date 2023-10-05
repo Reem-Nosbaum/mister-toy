@@ -38,8 +38,9 @@
 }
 
 .logo {
-  height: 55px;
-  width: 55px;
+  height: 35px;
+  width: 80px;
   padding: 5px;
   margin-bottom: 12px;
+  fill: white;
 }

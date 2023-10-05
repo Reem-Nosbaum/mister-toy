@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "../assets/NavBar.module.css";
-
+import logo from "../assets/images/site-logo.svg";
 export default function NavBar() {
   return (
     <div className={styles.nav}>
-      <Link to={"/"}></Link>
+      <Link className={styles.logo} to={"/"}>
+        <img src={logo} alt="Logo" />
+      </Link>
 
       <Link className={styles.a} to={"Pops"}>
         Pops
