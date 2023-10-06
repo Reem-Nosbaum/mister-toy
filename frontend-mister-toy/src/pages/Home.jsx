@@ -21,7 +21,7 @@ export default function Home() {
             key={pop.id}
             title={pop.title}
             imageName={pop.imageName}
-            series={pop.series}
+            price={pop.price}
           />
         ))}
       </div>

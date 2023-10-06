@@ -5,77 +5,88 @@
       "handle": "black-panther",
       "title": "Black Panther",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/897627/Black_Panther_Shirts_and_Jackets_0490e751-49fc-42a3-bf83-d59d3acd753e_large.jpg",
-      "series": ["Pop! Tees & Apparel", "Funko Target Exclusives"]
+      "series": ["Pop! Tees & Apparel", "Funko Target Exclusives"],
+      "price": "12$"
     },
     {
       "id": 2,
       "handle": "prison-mike",
       "title": "Prison Mike",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/897282/Prison_Mike_Pins_and_Badges_25cd17fc-9e3c-4eda-88fc-4cd17de3f2dd_large.JPG",
-      "series": ["Chase Pieces", "Pop! Pins"]
+      "series": ["Chase Pieces", "Pop! Pins"],
+      "price": "12$"
     },
     {
       "id": 3,
       "handle": "pam-beesly",
       "title": "Pam Beesly",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/897281/Pam_Beesly_Pins_and_Badges_d3dd70b8-d418-4729-9b02-6fe010edd235_large.JPG",
-      "series": ["Pop! Pins"]
+      "series": ["Pop! Pins"],
+      "price": "12$"
     },
     {
       "id": 4,
       "handle": "jim-halpert",
       "title": "Jim Halpert",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/897280/Jim_Halpert_Pins_and_Badges_101808e8-2a03-4eee-8d6e-2a6a8031b43d_large.JPG",
-      "series": ["Pop! Pins"]
+      "series": ["Pop! Pins"],
+      "price": "12$"
     },
     {
       "id": 5,
       "handle": "dwight-schrute",
       "title": "Dwight Schrute",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/897276/Dwight_Schrute_Pins_and_Badges_1187b27b-9c96-488e-910d-1341516721eb_large.JPG",
-      "series": ["Pop! Pins"]
+      "series": ["Pop! Pins"],
+      "price": "12$"
     },
     {
       "id": 6,
       "handle": "michael-scott",
       "title": "Michael Scott",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/897273/Michael_Scott_Pins_and_Badges_a0d46d01-147c-4d53-9a4c-3316bb516e0f_large.JPG",
-      "series": ["Pop! Pins"]
+      "series": ["Pop! Pins"],
+      "price": "12$"
     },
     {
       "id": 7,
       "handle": "c-3po-inferno",
       "title": "C-3PO (Inferno)",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/897132/C-3PO_%2528Orange%2529_Vinyl_Art_Toys_85aedcda-1346-4ce9-972a-ad89dec757d6_large.jpg",
-      "series": ["Hikari", "Hikari Star Wars"]
+      "series": ["Hikari", "Hikari Star Wars"],
+      "price": "12$"
     },
     {
       "id": 8,
       "handle": "funkoverse-harry-potter-4-pack-(wizarding-world)",
       "title": "Funkoverse Harry Potter (4 Pack) (Wizarding World)",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896896/Funkoverse_Harry_Potter_%25284_Pack%2529_%2528Wizarding_World%2529_Board_Games_97dd9e3e-a321-4b7b-b654-46d72a187e57_large.JPG",
-      "series": ["Funkoverse"]
+      "series": ["Funkoverse"],
+      "price": "12$"
     },
     {
       "id": 9,
       "handle": "twinkie-the-kid",
       "title": "Twinkie the Kid",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896892/Twinkie_the_Kid_Shirts_and_Jackets_15f3e09d-fc55-4ef9-ae19-487723c2bfa9_large.JPG",
-      "series": ["Pop! Tees & Apparel", "Funko Target Exclusives"]
+      "series": ["Pop! Tees & Apparel", "Funko Target Exclusives"],
+      "price": "12$"
     },
     {
       "id": 10,
       "handle": "twinkie-the-kid-metallic",
       "title": "Twinkie the Kid (Metallic)",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896890/Twinkie_the_Kid_%2528Metallic%2529_Vinyl_Art_Toys_28dc8669-5b9a-48ea-a056-e7240a8b3982.JPG",
-      "series": ["Pop! Vinyl", "Pop! Ad Icons", "Funko Target Exclusives"]
+      "series": ["Pop! Vinyl", "Pop! Ad Icons", "Funko Target Exclusives"],
+      "price": "12$"
     },
     {
       "id": 11,
       "handle": "sam-with-candy",
       "title": "Sam (with Candy)",
       "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896486/Sam_%2528with_Candy%2529_Vinyl_Art_Toys_dd2e8e05-1d25-4560-b98b-5dd3a49d1797.jpg",
-      "series": ["Pop! Vinyl", "Pop! Movies", "Special Edition (Funko Pop!s)"]
+      "series": ["Pop! Vinyl", "Pop! Movies", "Special Edition (Funko Pop!s)"],
+      "price": "12$"
     },
     {
       "id": 12,
@@ -85,253 +96,224 @@
       "series": [
         "Funko Walmart Exclusives",
         "Five Nights at Freddy's: Special Delivery"
-      ]
+      ],
+      "price": "12$"
     },
     {
       "id": 13,
-      "handle": "freddy-frostbear",
-      "title": "Freddy Frostbear",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896266/Freddy_Frostbear_Plush_Toys_de2d6b81-8c54-4ac1-9057-56caeab27920_large.JPG",
-      "series": ["Pop! Plush", "Funko Walmart Exclusives"]
+      "handle": "spider-man-%22up and away%22",
+      "title": "Spider-Man \"Up and Away\"",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896155/Spider-Man_%2522Up_and_Away%2522_Action_Figures_61a68e10-7a63-4f4f-b882-1ba6149a9b2a_large.JPG",
+      "series": ["Funko Marvel Collector Corps", "Spider-Man"],
+      "price": "12$"
     },
     {
       "id": 14,
-      "handle": "five-nights-at-freddy's-survive-'til-6-a.m.-game",
-      "title": "Five Nights at Freddy's Survive 'Til 6 a.m. Game",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896250/Five_Nights_at_Freddy%2527s_Survive_%2527Til_6_a.m._Game_Board_Games_394cd049-ba41-4e99-aa77-8971c1c54600_large.JPG",
-      "series": ["Pop! Board Games"]
+      "handle": "count-chocula-metallic",
+      "title": "Count Chocula (Metallic)",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896152/Count_Chocula_%2528Metallic%2529_Vinyl_Art_Toys_5d6b6cf5-0d1f-45f5-bf0f-90f9ba68d830_large.JPG",
+      "series": ["Pop! Cereal", "Pop! Ad Icons"],
+      "price": "12$"
     },
     {
       "id": 15,
-      "handle": "the-claw-i've-been-chosen-tee",
-      "title": "The Claw I've Been Chosen Tee",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896124/The_Claw_I%2527ve_Been_Chosen_Tee_Shirts_and_Jackets_62820edf-e223-4d40-b0d0-eb3aee4c1151_large.jpg",
-      "series": ["Pop! Tees & Apparel", "Funko FYE Exclusives"]
+      "handle": "rocky-the-flying-squirrel",
+      "title": "Rocky the Flying Squirrel",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896148/Rocky_the_Flying_Squirrel_Vinyl_Art_Toys_c2e1de60-1d85-4cb9-8ce3-ae9e65cdcd96_large.JPG",
+      "series": ["Pop! Animation", "Rocky & Bullwinkle"],
+      "price": "12$"
     },
     {
       "id": 16,
-      "handle": "ig-11-with-the-child-pop-and-shirt",
-      "title": "IG-11 with The Child Pop and Shirt",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896068/IG-11_with_The_Child_Pop_and_Shirt_Vinyl_Art_Toys_62964852-8f88-4cd3-88fd-d19d2e7a3e60_large.jpg",
-      "series": [
-        "Pop! Star Wars",
-        "Funko GameStop Exclusives",
-        "Pop! and Shirt Pack"
-      ]
+      "handle": "catwoman-%22mysterious",
+      "title": "Catwoman \"Mysterious\"",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896144/Catwoman_%2522Mysterious%2522_Action_Figures_e7ebe8c9-d31f-4d6a-9e2b-6c65b80c2a7d_large.JPG",
+      "series": ["Funko DC Collector Corps", "Catwoman"],
+      "price": "12$"
     },
     {
       "id": 17,
-      "handle": "mad-hatter-at-the-mad-tea-party-attraction",
-      "title": "Mad Hatter at the Mad Tea Party Attraction",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896035/Mad_Hatter_at_the_Mad_Tea_Party_Attraction_Vinyl_Art_Toys_4a667240-43f7-4c55-a765-74778b326d8f.jpg",
-      "series": ["Pop! Rides", "Special Edition (Funko Pop!s)"]
+      "handle": "rocket-raccoon",
+      "title": "Rocket Raccoon",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/896140/Rocket_Raccoon_Action_Figures_31990f44-dfd7-4ad4-953c-27c9610e169c_large.JPG",
+      "series": ["Funko Marvel Collector Corps", "Guardians of the Galaxy"],
+      "price": "12$"
     },
     {
       "id": 18,
-      "handle": "haunted-mansion-mini-backpack",
-      "title": "Haunted Mansion Mini Backpack",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895942/Haunted_Mansion_Mini_Backpack_Backpacks%252C_Luggage_and_Purses_2e14240b-7c56-489c-891d-cc9b618c47be.jpg",
-      "series": ["The Haunted Mansion"]
+      "handle": "sally-nightshade",
+      "title": "Sally Nightshade",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895779/Sally_Nightshade_Action_Figures_859c9 5f2-07ea-4f64-a37a-303e247f5af1_large.JPG",
+      "series": ["Funko Disney Treasures", "The Nightmare Before Christmas"],
+      "price": "12$"
     },
     {
       "id": 19,
-      "handle": "haunted-mansion-crossbody-bag",
-      "title": "Haunted Mansion Crossbody Bag",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895922/Haunted_Mansion_Crossbody_Bag_Backpacks%252C_Luggage_and_Purses_2680c256-c700-457a-b342-ad067ca0e304.jpg",
-      "series": ["The Haunted Mansion"]
+      "handle": "mummy-boy",
+      "title": "Mummy Boy",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895770/Mummy_Boy_Action_Figures_e877655b-13a0-4e1d-8c53-67f1c87a034f_large.JPG",
+      "series": ["Funko Disney Treasures", "The Nightmare Before Christmas"],
+      "price": "12$"
     },
     {
       "id": 20,
-      "handle": "the-demon-robot-(prototype)",
-      "title": "The Demon (Robot) (PROTOTYPE)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895667/The_Demon_%2528Robot%2529_%2528PROTOTYPE%2529_Vinyl_Art_Toys_3ae897f0-5498-4108-9b07-dcd13754e08b_large.jpg",
-      "series": ["Funko Prototypes"]
+      "handle": "pumpkin-king",
+      "title": "Pumpkin King",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895765/Pumpkin_King_Action_Figures_10318725-a295-49d6-a8c8-98ed706adf8e_large.JPG",
+      "series": ["Funko Disney Treasures", "The Nightmare Before Christmas"],
+      "price": "12$"
     },
     {
       "id": 21,
-      "handle": "c-3po-metallic-red",
-      "title": "C-3PO (Metallic Red)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895666/C-3PO_%2528Metallic_Red%2529_Vinyl_Art_Toys_ce5a6ddb-112c-49eb-93a4-fc54bfc7f0c5_large.jpg",
-      "series": ["Funko Prototypes"]
+      "handle": "frodo-baggins",
+      "title": "Frodo Baggins",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895756/Frodo_Baggins_Action_Figures_37b2ec86-6c48-4c7c-937b-703ed93201a5_large.JPG",
+      "series": ["Funko Specialty Series", "Lord of the Rings"],
+      "price": "12$"
     },
     {
       "id": 22,
-      "handle": "astro-boy-mythos-(prototype)",
-      "title": "Astro Boy (Mythos) (PROTOTYPE)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895663/Astro_Boy_%2528Mythos%2529_%2528PROTOTYPE%2529_Vinyl_Art_Toys_cfc6e645-97ae-4873-9493-116841ad374e_large.png",
-      "series": ["Funko Prototypes"]
+      "handle": "peter-venkman",
+      "title": "Peter Venkman",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895748/Peter_Venkman_Action_Figures_d0d54fcf-d862-43c7-9e0b-1870a72dd37a_large.JPG",
+      "series": ["Funko Specialty Series", "Ghostbusters"],
+      "price": "12$"
     },
     {
       "id": 23,
-      "handle": "ingenium-tee",
-      "title": "Ingenium Tee",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895510/Ingenium_Tee_Shirts_and_Jackets_87e18fce-c414-4fd9-938c-defc1f7373ca_large.jpg",
-      "series": ["Pop! Tees & Apparel", "Funko GameStop Exclusives"]
+      "handle": "ringwraith",
+      "title": "Ringwraith",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895740/Ringwraith_Action_Figures_91b2b01e-6f36-4ae2-9c6d-98af9fb16851_large.JPG",
+      "series": ["Funko Specialty Series", "Lord of the Rings"],
+      "price": "12$"
     },
     {
       "id": 24,
-      "handle": "super-saiyan-3-goku-tee",
-      "title": "Super Saiyan 3 Goku Tee",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895487/Super_Saiyan_3_Goku_Tee_Shirts_and_Jackets_313a0f2b-946c-4700-8cbb-6f927f645d41_large.jpg",
-      "series": [
-        "Funko GameStop Exclusives",
-        "Pop! and Shirt Pack",
-        "Dragon Ball Z"
-      ]
+      "handle": "deku",
+      "title": "Deku",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895732/Deku_Action_Figures_9abba378-e568-4e9f-bb8a-f4bb6608ad91_large.JPG",
+      "series": ["Funko Specialty Series", "My Hero Academia"],
+      "price": "12$"
     },
     {
       "id": 25,
-      "handle": "super-saiyan-3-goku-glow-in-the-dark-pop-and-shirt-pack",
-      "title": "Super Saiyan 3 Goku (Glow in the Dark) Pop and Shirt Pack",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895484/Super_Saiyan_3_Goku_%2528Glow_in_the_Dark%2529_Pop_and_Shirt_Pack_Vinyl_Art_Toys_dca15993-301b-481c-ab2a-e0aa3561b93c_large.jpg",
-      "series": [
-        "Pop! Animation",
-        "Funko GameStop Exclusives",
-        "Pop! and Shirt Pack"
-      ]
+      "handle": "todoroki",
+      "title": "Todoroki",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895727/Todoroki_Action_Figures_6435f017-3656-47ea-a39d-bf347d7b0f48_large.JPG",
+      "series": ["Funko Specialty Series", "My Hero Academia"],
+      "price": "12$"
     },
     {
       "id": 26,
-      "handle": "rat-fink-gray",
-      "title": "Rat Fink (Gray)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895430/Rat_Fink_%2528Gray%2529_Vinyl_Art_Toys_c0b723b6-6848-4ddd-bba1-033ab15d8b59.jpg",
-      "series": ["Pop! Vinyl", "Popcultcha", "Pop! Icons"]
+      "handle": "skeletor",
+      "title": "Skeletor",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895714/Skeletor_Action_Figures_5d18b4db-01c4-4b4c-b67d-bd465c0a03b8_large.JPG",
+      "series": ["Funko Specialty Series", "Masters of the Universe"],
+      "price": "12$"
     },
     {
       "id": 27,
-      "handle": "naruto-sage-mode-(se)",
-      "title": "Naruto (Sage Mode) (SE)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895076/Naruto_%2528Sage_Mode%2529_Vinyl_Art_Toys_f5edc087-c35e-4758-94ee-454701e7870f.jpg",
-      "series": [
-        "Pop! Animation",
-        "Pop! Vinyl",
-        "Special Edition (Funko Pop!s)"
-      ]
+      "handle": "keldor",
+      "title": "Keldor",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895707/Keldor_Action_Figures_0077e24c-5a71-4297-a915-86569c054e00_large.JPG",
+      "series": ["Funko Specialty Series", "Masters of the Universe"],
+      "price": "12$"
     },
     {
       "id": 28,
-      "handle": "son-gohan-super-saiyan-2-tee",
-      "title": "Son Gohan Super Saiyan 2 Tee",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/894984/Son_Gohan_Super_Saiyan_2_Tee_Shirts_and_Jackets_4bf0aa87-f6a5-4321-a986-152dab629635_large.jpg",
-      "series": ["Pop! Tees & Apparel"]
+      "handle": "randor",
+      "title": "Randor",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895697/Randor_Action_Figures_3a692d87 3d3-4c14-4096-aa5f-58b179053ff3_large.JPG",
+      "series": ["Funko_Specialty_Series", "Masters of the Universe"],
+      "price": "12$"
     },
     {
       "id": 29,
-      "handle": "super-saiyan-2-gohan-glow-in-the-dark-pop-and-tee-set",
-      "title": "Super Saiyan 2 Gohan (Glow in the Dark) Pop and Tee Set",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/894980/Super_Saiyan_2_Gohan_%2528Glow_in_the_Dark%2529_Pop_and_Tee_Set_Vinyl_Art_Toys_f5ec42b2-4a66-4d54-b77e-44fdb59665f1_large.jpg",
-      "series": ["Funko GameStop Exclusives", "Pop! and Shirt Pack"]
+      "handle": "ram-man",
+      "title": "Ram Man",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895689/Ram_Man_Action_Figures_2867f21f-3ec6-4600-92da-56216ccf8ea9_large.JPG",
+      "series": ["Funko Specialty Series", "Masters of the Universe"],
+      "price": "12$"
     },
     {
       "id": 30,
-      "handle": "cowboy-bebop-pop-and-shirt-pack-[fall-convention]",
-      "title": "Cowboy Bebop Pop and Shirt Pack [Fall Convention]",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/894480/Cowboy_Bebop_Ein_Pop_and_Shirt_Pack_Vinyl_Art_Toys_Sets_ef853830-ca5a-47a1-a188-1b9d90c29384_large.jpg",
-      "series": [
-        "Funko GameStop Exclusives",
-        "Pop! and Shirt Pack",
-        "New York Comic Con 2020"
-      ]
+      "handle": "he-man",
+      "title": "He-Man",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895682/He-Man_Action_Figures_d8f2b12f-bcc5-48f6-a87a-7223ea588d64_large.JPG",
+      "series": ["Funko Specialty Series", "Masters of the Universe"],
+      "price": "12$"
     },
     {
       "id": 31,
-      "handle": "cowboy-bebop-pop-and-shirt-pack-[nycc]",
-      "title": "Cowboy Bebop Pop and Shirt Pack [NYCC]",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/894465/Cowboy_Bebop_Ein_Pop_and_Shirt_Pack_Vinyl_Art_Toys_Sets_76529f65-f0df-4c72-a817-54270ccf648a_large.jpg",
-      "series": ["Pop! and Shirt Pack", "New York Comic Con 2020"]
+      "handle": "figment",
+      "title": "Figment",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895674/Figment_Action_Figures_45a2c03c-8969-46d7-af82-d213d8c159e4_large.JPG",
+      "series": ["Funko Disney Treasures", "Epcot"],
+      "price": "12$"
     },
     {
       "id": 32,
-      "handle": "summer-stitch-scented-(boxlunch)",
-      "title": "Summer Stitch (Scented) (Boxlunch)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893987/Summer_Stitch_%2528Scented%2529_%2528Boxlunch%2529_Keychains_b3f2a654-5c82-459a-8f58-b3d281661c16.JPG",
-      "series": ["Pocket Pop!", "Funko BoxLunch Exclusives"]
+      "handle": "snow-white",
+      "title": "Snow White",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895666/Snow_White_Action_Figures_66f36e4d-8333-4484-b0c8-798b5a2c62d9_large.JPG",
+      "series": ["Funko Disney Treasures", "Disney Princesses"],
+      "price": "12$"
     },
     {
       "id": 33,
-      "handle": "summer-stitch-scented-(hot-topic)",
-      "title": "Summer Stitch (Scented) (Hot Topic)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893984/Summer_Stitch_%2528Scented%2529_%2528Hot_Topic%2529_Keychains_04230a09-1bae-478c-9910-d3bc1d68eee1.JPG",
-      "series": ["Pocket Pop!", "Funko Hot Topic Exclusives"]
+      "handle": "elsa-anna",
+      "title": "Elsa & Anna",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895659/Elsa_&_Anna_Action_Figures_c9b8dd2c-c7c7-470a-9af7-64086dd9d7d7_large.JPG",
+      "series": ["Funko Disney Treasures", "Frozen"],
+      "price": "12$"
     },
     {
       "id": 34,
-      "handle": "ed-and-ein",
-      "title": "Ed and Ein",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893982/Ein_Shirts_and_Jackets_10e9378f-3994-401f-83fb-4c833c99e344_large.JPG",
-      "series": [
-        "New York Comic Con",
-        "Pop! Tees & Apparel",
-        "New York Comic Con 2020"
-      ]
+      "handle": "daffy-duck",
+      "title": "Daffy Duck",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895651/Daffy_Duck_Action_Figures_503a26b2-e015-481d-9e20-c21f4558a887_large.JPG",
+      "series": ["Funko Specialty Series", "Looney Tunes"],
+      "price": "12$"
     },
     {
       "id": 35,
-      "handle": "groot-holiday-(sitting)-(glow-in-the-dark)",
-      "title": "Groot (Holiday) (Sitting) (Glow in the Dark)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893962/Groot_%2528Holiday%2529_%2528Sitting%2529_%2528Glow_in_the_Dark%2529_Vinyl_Art_Toys_16b17e3a-9d0f-4e35-ba6c-8abb6d0a21a4.JPG",
-      "series": ["Pop! Vinyl", "Pop! Marvel"]
+      "handle": "bugs-bunny",
+      "title": "Bugs Bunny",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895643/Bugs_Bunny_Action_Figures_5c0be25d-c296-4e04-ae14-94f2bf330aa7_large.JPG",
+      "series": ["Funko Specialty Series", "Looney Tunes"],
+      "price": "12$"
     },
     {
       "id": 36,
-      "handle": "clicker",
-      "title": "Clicker",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893941/Clicker_Vinyl_Art_Toys_88bc92d3-33a7-4ea9-8798-a9dedddd6177.JPG",
-      "series": ["Pop! Vinyl", "Pop! Games", "Funko GameStop Exclusives"]
+      "handle": "tommy",
+      "title": "Tommy",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895636/Tommy_Action_Figures_49f878f4-ccbb-44a7-9b9a-c870b0da4b99_large.JPG",
+      "series": ["Funko Specialty Series", "Power Rangers"],
+      "price": "12$"
     },
     {
       "id": 37,
-      "handle": "severus-snape,-harry-potter,-parvati-patil-&amp;-minerva-mcgonagall-4-pack",
-      "title": "Severus Snape, Harry Potter, Parvati Patil & Minerva McGonagall (4-Pack)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893937/Severus_Snape%252C_Harry_Potter%252C_Parvati_Patil_and_Minerva_McGonagall_%25284-Pack%2529_Vinyl_Art_Toys_8060eae1-93c3-4036-a9a4-d3b192bdafe1.JPG",
-      "series": [
-        "Pop! Vinyl",
-        "Pop! Harry Potter",
-        "Special Edition (Funko Pop!s)"
-      ]
+      "handle": "megazord",
+      "title": "Megazord",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895630/Megazord_Action_Figures_9a775be8-599d-4a13-8d2e-c2d2c940f3dd_large.JPG",
+      "series": ["Funko Specialty Series", "Power Rangers"],
+      "price": "12$"
     },
     {
       "id": 38,
-      "handle": "spider-man-wood-deco",
-      "title": "Spider-Man (Wood Deco)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893932/Spider-Man_%2528Wood_Deco%2529_Vinyl_Art_Toys_9b16d6eb-5114-4161-b30f-dfe9088a1ab8.JPG",
-      "series": ["Pop! Vinyl", "Pop! Marvel", "Entertainment Earth"]
+      "handle": "mum",
+      "title": "Mum",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895625/Mum_Action_Figures_84d0f168-774d-4bce-9bc5-b775a0b0c48a_large.JPG",
+      "series": ["Funko Specialty Series", "Ad Icons"],
+      "price": "12$"
     },
     {
       "id": 39,
-      "handle": "mothman",
-      "title": "Mothman",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893644/Mothman_Vinyl_Art_Toys_ceba3048-6320-46f9-a700-fe176609d58f.jpg",
-      "series": ["Pop! Vinyl", "Popcultcha", "Pop! Myths"]
-    },
-    {
-      "id": 40,
-      "handle": "sesshomaru-as-demon-dog-special-edition",
-      "title": "Sesshomaru as Demon Dog (Special Edition)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893296/Sesshomaru_as_Demon_Dog_%2528Special_Edition%2529_Vinyl_Art_Toys_24d27e6e-8e70-4c4a-8075-4d1a1c91476d.jpg",
-      "series": [
-        "Pop! Animation",
-        "Pop! Vinyl",
-        "Special Edition (Funko Pop!s)"
-      ]
-    },
-    {
-      "id": 41,
-      "handle": "hulk-vs-thor-the-contest-of-champions",
-      "title": "Hulk Vs Thor (The Contest Of Champions)",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893280/Hulk_Vs_Thor_%2528The_Contest_Of_Champions%2529_Shirts_and_Jackets_2f2eb23c-0cb1-429a-97fc-ac2ed9286883_large.jpg",
-      "series": ["Pop! Tees & Apparel", "Funko Target Exclusives"]
-    },
-    {
-      "id": 42,
-      "handle": "blue-eyes-white-dragon",
-      "title": "Blue Eyes White Dragon",
-      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893279/Blue_Eyes_White_Dragon_Shirts_and_Jackets_e5585ef0-c889-417b-984d-6b0c37c1ec1b.jpg",
-      "series": [
-        "Pop! Animation",
-        "Pop! Tees & Apparel",
-        "Funko BoxLunch Exclusives"
-      ]
+      "handle": "owlman",
+      "title": "Owlman",
+      "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895619/Owlman_Action_Figures_9be109e8-5c80-47c2-94c2-2edea53cda6d_large.JPG",
+      "series": ["Funko Specialty Series", "DC Comics"],
+      "price": "12$"
     }
   ]
 }
