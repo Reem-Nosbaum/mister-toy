@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import logo from "../assets/images/site-logo.svg";
 import heart from "../assets/images/wishlist.svg";
 import user from "../assets/images/user.svg";
 import cart from "../assets/images/shopping-cart.svg";
-import { useState } from "react";
 
 function NavBar() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+
+  const handleInputChange = (e) => {
+    setSearchValue(e.target.value);
+  };
 
   return (
     <nav className="bg-stone-900 text-white">
@@ -28,16 +33,18 @@ function NavBar() {
             CATEGORY
           </Link>
         </div>
-        <div className="flex-grow"></div>
+        <div className="flex-grow"></div> {/* Empty div for flexible space */}
         <div className="flex items-center mr-8">
           <input
             type="search"
-            className={` text-black mr-16 rounded-full outline-0 transition-all duration-300 ${
+            className={`text-stone-900 mr-16 rounded-full outline-0 transition-all duration-300 ${
               isSearchFocused ? "w-64" : ""
             }`}
-            placeholder="Search"
+            placeholder={searchValue ? "" : "Search"}
             onFocus={() => setIsSearchFocused(true)}
             onBlur={() => setIsSearchFocused(false)}
+            onChange={handleInputChange}
+            style={{ paddingLeft: "1rem" }}
           />
           <Link to="/wishlist" className="mr-4">
             <img src={heart} alt="heart" style={{ width: "45px" }} />
