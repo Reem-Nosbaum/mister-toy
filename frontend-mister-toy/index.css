@@ -11,3 +11,15 @@ input[type="search"]::-webkit-search-cancel-button {
   background-image: url("/Users/reem/לימודים/mister-toy/frontend-mister-toy/src/assets/images/search.svg");
   background-size: cover;
 }
+
+@layer base {
+  nav {
+    font-family: "Proxima Nova";
+  }
+  html {
+    font-family: sans-serif;
+  }
+  body {
+    font-family: "Proxima Nova";
+  }
+}
