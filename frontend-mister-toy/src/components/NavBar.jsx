@@ -5,14 +5,18 @@ import heart from "../assets/images/wishlist.svg";
 import user from "../assets/images/user.svg";
 import cart from "../assets/images/bag.svg";
 import { DropDownMenu } from "./dropDownMenu";
+
 function NavBar() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isFandomsDropDownVisible, setIsFandomsDropDownVisible] =
+    useState(false);
+  const [isCategoryDropDownVisible, setIsCategoryDropDownVisible] =
+    useState(false);
 
   return (
     <>
-      <nav className="bg-stone-900 text-white sans-serif flex justify-between w-full pr-16 pl-16 relative ">
-        <DropDownMenu category={""} cords={{ buttom: 50, left: 50 }} />
-        <div className="flex items-center ">
+      <nav className="bg-stone-900 text-white sans-serif flex justify-between w-full pr-16 pl-16 relative">
+        <div className="flex items-center">
           <Link to="/">
             <img src={logo} alt="logo" style={{ width: "100px" }} />
           </Link>
@@ -20,15 +24,28 @@ function NavBar() {
             <Link
               to="/fandoms"
               className="mr-2 ml-6 p-4 font-semibold hover:bg-white hover:text-stone-800"
+              onMouseEnter={() => setIsFandomsDropDownVisible(true)}
+              onMouseLeave={() => setIsFandomsDropDownVisible(false)}
             >
               FANDOMS
             </Link>
+            <DropDownMenu
+              isVisible={isFandomsDropDownVisible}
+              type={"fandoms"}
+            />
+
             <Link
               to="/category"
               className="mr-4 ml-4 p-4 font-semibold hover:bg-white hover:text-stone-800"
+              onMouseEnter={() => setIsCategoryDropDownVisible(true)}
+              onMouseLeave={() => setIsCategoryDropDownVisible(false)}
             >
               CATEGORY
             </Link>
+            <DropDownMenu
+              isVisible={isCategoryDropDownVisible}
+              type={"category"}
+            />
           </div>
         </div>
         <div className="flex items-center gap-7">
