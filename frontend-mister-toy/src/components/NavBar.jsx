@@ -28,11 +28,11 @@ function NavBar() {
               onMouseLeave={() => setIsFandomsDropDownVisible(false)}
             >
               FANDOMS
+              <DropDownMenu
+                isVisible={isFandomsDropDownVisible}
+                type={"fandoms"}
+              />
             </Link>
-            <DropDownMenu
-              isVisible={isFandomsDropDownVisible}
-              type={"fandoms"}
-            />
 
             <Link
               to="/category"
@@ -41,11 +41,11 @@ function NavBar() {
               onMouseLeave={() => setIsCategoryDropDownVisible(false)}
             >
               CATEGORY
+              <DropDownMenu
+                isVisible={isCategoryDropDownVisible}
+                type={"category"}
+              />
             </Link>
-            <DropDownMenu
-              isVisible={isCategoryDropDownVisible}
-              type={"category"}
-            />
           </div>
         </div>
         <div className="flex items-center gap-7">
