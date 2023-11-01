@@ -1,20 +1,50 @@
-/* eslint-disable react/prop-types */
-import { useState } from "react";
-import { AiFillCaretLeft } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const nextSlide = () => {
+    const newIndex = (currentIndex + 1) % slides.length;
+    setCurrentIndex(newIndex);
+  };
+
+  const prevSlide = () => {
+    const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+    setCurrentIndex(newIndex);
+  };
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "ArrowLeft") {
+        prevSlide();
+      } else if (event.key === "ArrowRight") {
+        nextSlide();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [currentIndex]);
+
   return (
-    <div className="img div h-[490px] w-full">
-      <div className="absolute top-1/2 transform -translate-y-1/2 right-[32px] text-stone-50 z-10 cursor-pointer ">
+    <div className="img div h-[490px] w-full relative">
+      <div
+        className="absolute top-1/2 transform -translate-y-1/2 right-[32px] text-stone-50 z-10 cursor-pointer"
+        onClick={nextSlide}
+      >
         ➡️
       </div>
-      <div className="absolute top-1/2 transform -translate-y-1/2 left-[32px] text-stone-50 z-10 cursor-pointer ">
-        ⬅️ <AiFillCaretLeft />
+      <div
+        className="absolute top-1/2 transform -translate-y-1/2 left-[32px] text-stone-50 z-10 cursor-pointer"
+        onClick={prevSlide}
+      >
+        ⬅️
       </div>
       <img
-        className=" w-full h-full"
+        className="w-full h-full"
         src={slides[currentIndex].img}
         alt="logo"
       />
