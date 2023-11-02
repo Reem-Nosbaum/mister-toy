@@ -2,25 +2,47 @@ import ImageSlider from "../components/ImageSlider";
 import image1 from "../assets/images/cover/Feature-FNAFHoliday-Background.jpg";
 import image2 from "../assets/images/cover/Feature-GiftGuide-Background.jpg";
 import image3 from "../assets/images/cover/Feature-OnePiece-Map-BG.jpg";
+import pop1 from "../assets/images/Feature-ornaments-Product.png";
+import pop3 from "../assets/images/Feature-OnePiece-Product-72111.png";
+import pop2 from "../assets/images/Feature-GiftGuide-Games-Product.png";
 
 function Home() {
   const slides = [
-    { img: image1, title: "Holiday" },
-    { img: image2, title: "GiftGuide" },
-    { img: image3, title: "OnePiece" },
+    {
+      bgImg: image1,
+      popImg: pop1,
+      title: "GIFTS WITHOUT GUESSING",
+      h2: ["NO NEED TO ROLL", "THE DICE"],
+      h3: [
+        "Consult Our Gift Guide to Find the Perfect Presents to Fill Any Gaps in",
+        "Your List.",
+      ],
+    },
+    {
+      bgImg: image2,
+      popImg: pop2,
+      title: "DASHING DROPS",
+      h2: ["SNOWDROPS,", "GUMDROPS…"],
+      h3: [
+        "Merry Funko Drops! Prep for the Holidays with New Exclusives and",
+        "Save 10% Now Through Nov. 5.",
+      ],
+    },
+    {
+      bgImg: image3,
+      popImg: pop3,
+      title: "OnePiece",
+      h2: ["TRAVEL TO THE", "LAND OF WANO"],
+      h3: [
+        "Gear Up Your One Piece Collection for the Great Battle That’s Incoming!",
+        "Shop All Things New to One Piece Today!",
+      ],
+    },
   ];
 
   return (
-    <div className="">
+    <div>
       <ImageSlider slides={slides} />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold z-10">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          nulla nisi veniam, vel qui quasi modi! Deleniti libero molestiae omnis
-          aspernatur, eaque possimus saepe nemo obcaecati, dolores, qui iure
-          maiores?
-        </div>
-      </div>
     </div>
   );
 }
