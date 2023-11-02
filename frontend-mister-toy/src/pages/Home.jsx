@@ -11,21 +11,21 @@ function Home() {
     {
       bgImg: image1,
       popImg: pop1,
-      title: "GIFTS WITHOUT GUESSING",
-      h2: ["NO NEED TO ROLL", "THE DICE"],
-      h3: [
-        "Consult Our Gift Guide to Find the Perfect Presents to Fill Any Gaps in",
-        "Your List.",
-      ],
-    },
-    {
-      bgImg: image2,
-      popImg: pop2,
       title: "DASHING DROPS",
       h2: ["SNOWDROPS,", "GUMDROPS…"],
       h3: [
         "Merry Funko Drops! Prep for the Holidays with New Exclusives and",
         "Save 10% Now Through Nov. 5.",
+      ],
+    },
+    {
+      bgImg: image2,
+      popImg: pop2,
+      title: "GIFTS WITHOUT GUESSING",
+      h2: ["NO NEED TO ROLL", "THE DICE"],
+      h3: [
+        "Consult Our Gift Guide to Find the Perfect Presents to Fill Any Gaps in",
+        "Your List.",
       ],
     },
     {
