@@ -71,8 +71,11 @@ const ImageSlider = ({ slides }) => {
       <img
         className="w-full h-full "
         src={slides[currentIndex].bgImg}
-        alt="logo"
+        alt="bgImg"
       />
+      <label className="bottom-12 relative text-stone-50 left-10 text-sm  ">
+        <input type="checkbox" /> Autoplay Off
+      </label>
     </div>
   );
 };
