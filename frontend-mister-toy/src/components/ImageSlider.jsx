@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import rightArrow from "../assets/images/angle-right.svg";
 import leftArrow from "../assets/images/angle-left.svg";
+import dot from "../assets/images/dot.svg";
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoplay, setAotuplay] = useState(true);
+  const [activeDotIndex, setActiveDotIndex] = useState(0);
 
-  console.log(autoplay);
   const nextSlide = () => {
     const newIndex = (currentIndex + 1) % slides.length;
     setCurrentIndex(newIndex);
@@ -19,6 +20,10 @@ const ImageSlider = ({ slides }) => {
 
   const handelAutoplay = (e) => {
     setAotuplay(e.target.checked);
+  };
+
+  const handelDotClick = (index) => {
+    setCurrentIndex(index);
   };
 
   useEffect(() => {
@@ -85,6 +90,22 @@ const ImageSlider = ({ slides }) => {
         <input type="checkbox" checked={autoplay} onChange={handelAutoplay} />{" "}
         Autoplay {autoplay ? "On" : "Off"}
       </label>
+      <ul className="flex justify-center items-center">
+        {slides.map((slide, index) => (
+          <img
+            key={index}
+            src={dot}
+            alt="dot"
+            className={`w-18 h-8 cursor-pointer hover:invert relative bottom-24 ${
+              currentIndex === index ? "invert" : ""
+            }`}
+            onClick={() => {
+              handelDotClick(index);
+              currentIndex(index);
+            }}
+          />
+        ))}
+      </ul>
     </div>
   );
 };
