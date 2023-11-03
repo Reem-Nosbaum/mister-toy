@@ -4,7 +4,9 @@ import leftArrow from "../assets/images/angle-left.svg";
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [autoplay, setAotuplay] = useState(true);
 
+  console.log(autoplay);
   const nextSlide = () => {
     const newIndex = (currentIndex + 1) % slides.length;
     setCurrentIndex(newIndex);
@@ -13,6 +15,10 @@ const ImageSlider = ({ slides }) => {
   const prevSlide = () => {
     const newIndex = (currentIndex - 1 + slides.length) % slides.length;
     setCurrentIndex(newIndex);
+  };
+
+  const handelAutoplay = (e) => {
+    setAotuplay(e.target.checked);
   };
 
   useEffect(() => {
@@ -25,8 +31,10 @@ const ImageSlider = ({ slides }) => {
     };
 
     const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
+      if (autoplay) {
+        nextSlide();
+      }
+    }, 4000);
 
     window.addEventListener("keydown", handleKeyPress);
 
@@ -34,7 +42,7 @@ const ImageSlider = ({ slides }) => {
       window.removeEventListener("keydown", handleKeyPress);
       clearInterval(interval);
     };
-  }, [currentIndex]);
+  }, [currentIndex, autoplay]);
 
   return (
     <div className="img div h-[620px] w-full relative ">
@@ -74,7 +82,8 @@ const ImageSlider = ({ slides }) => {
         alt="bgImg"
       />
       <label className="bottom-12 relative text-stone-50 left-10 text-sm  ">
-        <input type="checkbox" /> Autoplay Off
+        <input type="checkbox" checked={autoplay} onChange={handelAutoplay} />{" "}
+        Autoplay {autoplay ? "On" : "Off"}
       </label>
     </div>
   );
