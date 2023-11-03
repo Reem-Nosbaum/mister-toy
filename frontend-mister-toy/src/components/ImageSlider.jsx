@@ -6,7 +6,6 @@ import dot from "../assets/images/dot.svg";
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoplay, setAotuplay] = useState(true);
-  const [activeDotIndex, setActiveDotIndex] = useState(0);
 
   const nextSlide = () => {
     const newIndex = (currentIndex + 1) % slides.length;
@@ -101,7 +100,6 @@ const ImageSlider = ({ slides }) => {
             }`}
             onClick={() => {
               handelDotClick(index);
-              currentIndex(index);
             }}
           />
         ))}
