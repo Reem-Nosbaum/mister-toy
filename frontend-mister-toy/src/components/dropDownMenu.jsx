@@ -7,7 +7,7 @@ import HalfheadHoodieThumbnail from "../assets/images/Halfhead-hoodie-Thumbnail.
 export const DropDownMenu = ({ isVisible, type }) => {
   const options = {
     fandoms: [
-      { name: " SHOP ALL", img: FreddyThumbnail },
+      { name: "SHOP ALL", img: FreddyThumbnail },
       { name: "MOVIES & TV", img: JakeSullyThumbnail },
     ],
     category: [
