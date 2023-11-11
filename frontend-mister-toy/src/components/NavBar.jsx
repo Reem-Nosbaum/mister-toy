@@ -15,15 +15,14 @@ function NavBar() {
 
   return (
     <>
-      <nav className="bg-stone-900 text-white sans-serif flex justify-between w-full pr-16 pl-16 relative z-20">
-        <div className="flex items-center">
+      <nav className="bg-stone-900 text-white sans-serif flex justify-between w-full pr-16 pl-16 fixed z-20 ">
+        <div className="flex items-center ">
           <Link to="/">
             <img src={logo} alt="logo" style={{ width: "100px" }} />
           </Link>
-          <div className="inline-flex w-30 h-14 mt-6">
-            <Link
-              to="/fandoms"
-              className="mr-2 ml-6 p-4 font-semibold hover:bg-white hover:text-stone-800"
+          <div className="inline-flex w-30 h-14 mt-6  ">
+            <div
+              className="mr-2 ml-6 p-4 font-semibold hover:bg-white hover:text-stone-800 cursor-pointer   "
               onMouseEnter={() => setIsFandomsDropDownVisible(true)}
               onMouseLeave={() => setIsFandomsDropDownVisible(false)}
             >
@@ -32,11 +31,10 @@ function NavBar() {
                 isVisible={isFandomsDropDownVisible}
                 type={"fandoms"}
               />
-            </Link>
+            </div>
 
-            <Link
-              to="/category"
-              className="mr-4 ml-4 p-4 font-semibold hover:bg-white hover:text-stone-800"
+            <div
+              className="mr-4 ml-4 p-4 font-semibold hover:bg-white hover:text-stone-800  cursor-pointer"
               onMouseEnter={() => setIsCategoryDropDownVisible(true)}
               onMouseLeave={() => setIsCategoryDropDownVisible(false)}
             >
@@ -45,7 +43,7 @@ function NavBar() {
                 isVisible={isCategoryDropDownVisible}
                 type={"category"}
               />
-            </Link>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-7">

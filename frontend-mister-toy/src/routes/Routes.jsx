@@ -23,10 +23,30 @@ export const router = createBrowserRouter([
       {
         path: "/fandoms",
         element: <Fandoms />,
+        children: [
+          {
+            path: "/fandoms/shop-all",
+            element: <Fandoms />,
+          },
+          {
+            path: "/fandoms/movies&tv",
+            element: <Fandoms />,
+          },
+        ],
       },
       {
         path: "/category",
         element: <Category />,
+        children: [
+          {
+            path: "/category/accessories",
+            element: <Category />,
+          },
+          {
+            path: "/category/apparel",
+            element: <Category />,
+          },
+        ],
       },
       {
         path: "/wishlist",
