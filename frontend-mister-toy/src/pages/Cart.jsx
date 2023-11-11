@@ -1,10 +1,4 @@
-import Card from "../components/Card";
-
 function Cart() {
-  return (
-    <div>
-      <Card />
-    </div>
-  );
+  return <div> hellow world</div>;
 }
 export default Cart;
