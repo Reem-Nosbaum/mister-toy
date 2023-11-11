@@ -5,6 +5,7 @@ import image3 from "../assets/images/cover/Feature-OnePiece-Map-BG.jpg";
 import pop1 from "../assets/images/Feature-ornaments-Product.png";
 import pop3 from "../assets/images/Feature-OnePiece-Product-72111.png";
 import pop2 from "../assets/images/Feature-GiftGuide-Games-Product.png";
+import Card from "../components/Card";
 
 function Home() {
   const slides = [
@@ -43,6 +44,17 @@ function Home() {
   return (
     <div>
       <ImageSlider slides={slides} />
+      <h1 className="text-6xl items-center justify-center flex pt-3">
+        NEW PICKS FOR YOU!
+      </h1>
+      <div className="flex">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

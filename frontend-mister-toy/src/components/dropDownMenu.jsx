@@ -34,7 +34,7 @@ export const DropDownMenu = ({ isVisible, type }) => {
 
   return (
     <div
-      className={`drop-down-menu absolute text-stone-800  ${
+      className={`drop-down-menu absolute text-stone-800 ${
         isVisible ? "block" : "hidden"
       }`}
       style={styleNav(type)}

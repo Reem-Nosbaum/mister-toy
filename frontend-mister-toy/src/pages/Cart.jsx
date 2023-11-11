@@ -1,4 +1,4 @@
 function Cart() {
-  return <div> hellow world</div>;
+  return <div>Cart </div>;
 }
 export default Cart;

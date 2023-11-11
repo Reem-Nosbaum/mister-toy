@@ -1,4 +1,4 @@
 function Wishlist() {
-  return <div className="z-30 bg-slate-500 w-full h-full">Wishlist</div>;
+  return <div>Wishlist</div>;
 }
 export default Wishlist;

@@ -15,14 +15,14 @@ function NavBar() {
 
   return (
     <>
-      <nav className="bg-stone-900 text-white sans-serif flex justify-between w-full pr-16 pl-16  z-20 ">
+      <nav className="bg-stone-900 text-white sans-serif flex justify-between w-full pr-16 pl-16  z-20">
         <div className="flex items-center ">
           <Link to="/">
             <img src={logo} alt="logo" style={{ width: "100px" }} />
           </Link>
           <div className="inline-flex w-30 h-14 mt-6  ">
             <div
-              className="mr-2 ml-6 p-4 font-semibold hover:bg-white hover:text-stone-800 cursor-pointer   "
+              className="mr-2 ml-6 p-4 font-semibold hover:bg-white hover:text-stone-800 cursor-pointer "
               onMouseEnter={() => setIsFandomsDropDownVisible(true)}
               onMouseLeave={() => setIsFandomsDropDownVisible(false)}
             >
