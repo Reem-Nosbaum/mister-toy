@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Proxima Nova"'],
+        sans_Regular: [" ProximaNova-Regular"],
       },
     },
   },

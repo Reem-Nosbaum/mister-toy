@@ -1,4 +1,4 @@
 function Cart() {
-  return <div>Cart </div>;
+  return <div></div>;
 }
 export default Cart;
