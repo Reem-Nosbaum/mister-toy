@@ -15,18 +15,18 @@ function Card() {
   };
 
   return (
-    <div className="text-black h-full w-72 border-stone-100 border-4 rounded-xl flex-col m-3">
+    <div className="text-black w-64 h-96 border-stone-100 border-4 rounded-xl flex items-center m-3 flex-col relative overflow-hidden">
       <img
         src={imageSrc}
         alt="DRAGON BALL Z"
-        className="w-80 h-64"
+        className="w-80 h-64 hover:scale-110 "
         onMouseOver={handleHover}
         onMouseOut={handleLeave}
       />
-      <h3 className="font-sans_Regular text-sm pl-3">DRAGON BALL Z</h3>
+      <h3 className="font-sans_Regular text-sm pl-3 pt-4">DRAGON BALL Z</h3>
       <h1 className="pl-3">POP! SUPER SAIYAN GOKU</h1>
       <br />
-      <h3 className="font-sans_Regular text-sm pl-3">13.00 $</h3>
+      <h3 className="font-sans_Regular text-lg pl-3">$13.00</h3>
       <div className="flex justify-center pb-4 pt-4">
         <Button text="ADD TO CART" />
       </div>
