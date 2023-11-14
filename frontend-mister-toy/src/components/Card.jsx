@@ -15,7 +15,7 @@ function Card() {
   };
 
   return (
-    <div className="text-black w-64 h-96 border-stone-100 border-4 rounded-xl flex items-center m-3 flex-col relative overflow-hidden">
+    <div className="text-black w-64 h-[27rem] border-stone-100 border-4 rounded-xl flex  m-3 flex-col overflow-hidden">
       <img
         src={imageSrc}
         alt="DRAGON BALL Z"
@@ -27,7 +27,7 @@ function Card() {
       <h1 className="pl-3">POP! SUPER SAIYAN GOKU</h1>
       <br />
       <h3 className="font-sans_Regular text-lg pl-3">$13.00</h3>
-      <div className="flex justify-center pb-4 pt-4">
+      <div className="flex items-center flex-col pt-2">
         <Button text="ADD TO CART" />
       </div>
     </div>
