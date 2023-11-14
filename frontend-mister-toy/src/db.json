@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! SUPER SAIYAN GOKU",
+      "price": 12.0,
+      "details": "Level up your Dragon Ball Z collection with this Pop! of Super Saiyan Goku. Collectible stands 3.75-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw5a1ded10/images/funko/3807-1.png?sw=346&sh=346",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw0d416594/images/funko/3807-2.png?sw=346&sh=346"
+    },
+    {
+      "id": 2,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! VEGITO",
+      "price": 12.0,
+      "details": "Goku and Vegeta have successfully fused, creating the most powerful warrior, in order to protect Earth and your Dragon Ball Z collection from attackers. Collect Pop! Vegito to save your set from destruction. Vinyl figure is approximately 4.5-inches tall",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw9a5fce97/images/funko/48662-1.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwde0a7c46/images/funko/48662-2.png?sw=800&sh=800"
+    },
+    {
+      "id": 3,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! GOKU AND FLYING NIMBUS",
+      "price": 12.0,
+      "details": "Master Roshi gave Goku the yellow cloud, Flying Nimbus, which he used to travel without using his own energy. It was a gift that had come in handy on more than one occasion. Bring Pop! Goku & Flying Nimbus into your Dragon Ball collection. Collectible stands approximately 3.75-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwcea5ef81/images/funko/7427-1.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw393f30e4/images/funko/7427-2.png?sw=800&sh=800"
+    },
+    {
+      "id": 4,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! PERFECT CELL",
+      "price": 12.0,
+      "details": "Cell has attained his perfect form after absorbing Androids 17 and 18. Own this Dragon Ball Z villain for yourself with this Pop! Vinyl.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw4606323c/images/funko/3992-1.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw0008f6e7/images/funko/3992-2.png?sw=800&sh=800"
+    }
+  ]
+}
