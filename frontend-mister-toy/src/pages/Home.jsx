@@ -49,10 +49,6 @@ function Home() {
       </h1>
       <div className="flex">
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
       </div>
     </div>
   );
