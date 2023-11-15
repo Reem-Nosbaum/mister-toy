@@ -1,29 +1,47 @@
-import { useEffect, useState } from "react";
+// PopService.js
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-function PopService() {
-  const URL = "http://localhost:8000/products";
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+const URL = "http://localhost:8000";
+
+const fetchSlides = async (dispatch) => {
+  try {
+    const response = await fetch(`${URL}/slides`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const jsonData = await response.json();
+    dispatch({ type: "SET_SLIDES", payload: jsonData });
+    console.log("Slides Data:", jsonData);
+  } catch (error) {
+    dispatch({ type: "SET_POP_SERVICE_ERROR", payload: error });
+  }
+};
+
+const fetchProducts = async (dispatch) => {
+  try {
+    const response = await fetch(`${URL}/products`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const jsonData = await response.json();
+    dispatch({ type: "SET_POP_SERVICE_DATA", payload: jsonData });
+    console.log("Products Data:", jsonData);
+  } catch (error) {
+    dispatch({ type: "SET_POP_SERVICE_ERROR", payload: error });
+  }
+};
+
+const PopService = () => {
+  const dispatch = useDispatch();
+  const popServiceData = useSelector((state) => state.popServiceData);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(URL);
+    fetchSlides(dispatch);
+    fetchProducts(dispatch);
+  }, [dispatch]);
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        setError(error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  return;
-}
+  return popServiceData;
+};
 
 export default PopService;

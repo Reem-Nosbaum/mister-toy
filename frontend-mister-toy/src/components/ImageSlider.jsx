@@ -2,8 +2,12 @@ import { useEffect, useState } from "react";
 import rightArrow from "../assets/images/angle-right.svg";
 import leftArrow from "../assets/images/angle-left.svg";
 import dot from "../assets/images/dot.svg";
+import { useDispatch, useSelector } from "react-redux";
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = () => {
+  const slides = useSelector((state) => state.slides);
+  const dispatch = useDispatch();
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoplay, setAotuplay] = useState(true);
 
@@ -48,6 +52,10 @@ const ImageSlider = ({ slides }) => {
     };
   }, [currentIndex, autoplay]);
 
+  if (!slides || slides.length === 0 || !slides[currentIndex]) {
+    return null; // or some loading indicator if you prefer
+  }
+
   return (
     <div className="img div h-[620px] w-full relative ">
       <div
@@ -70,13 +78,13 @@ const ImageSlider = ({ slides }) => {
       />
       <div className="absolute top-52 left-14 text-stone-50 ">
         <h1 className="relative bottom-6">{slides[currentIndex].title}</h1>
-        {slides[currentIndex].h2.map((text, index) => (
+        {slides[currentIndex].secondaryTitle.map((text, index) => (
           <h2 className="text-6xl relative bottom-4" key={index}>
             {text}
           </h2>
         ))}
 
-        {slides[currentIndex].h3.map((text, index) => (
+        {slides[currentIndex].paragraph.map((text, index) => (
           <h3 key={index}>{text}</h3>
         ))}
       </div>
