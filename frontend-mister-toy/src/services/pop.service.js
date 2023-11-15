@@ -6,8 +6,8 @@ export const popService = {
   removePopById,
   updatePopPrice,
   newPop,
-  save,
-  getEmptyPop,
+  // save,
+  // getEmptyPop,
 };
 
 async function getPops() {
