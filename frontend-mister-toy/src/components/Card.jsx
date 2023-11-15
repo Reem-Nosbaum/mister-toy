@@ -2,8 +2,6 @@ import Button from "../assets/styles/Button";
 import { useState } from "react";
 
 const Card = ({ products }) => {
-  console.log("Card Received Products:", products);
-
   const [hoveredProductId, setHoveredProductId] = useState(null);
   const handleMouseOver = (productId) => {
     setHoveredProductId(productId);
@@ -14,12 +12,12 @@ const Card = ({ products }) => {
   };
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex items-center ">
       {products &&
         products.map((product) => (
           <div
             key={product.id}
-            className="text-black max-w-64 h-[27rem] border-stone-100 border-4 rounded-xl flex m-3 flex-col "
+            className="text-black w-64  border-stone-100 border-4 rounded-xl flex flex-col "
           >
             <img
               src={
@@ -28,19 +26,21 @@ const Card = ({ products }) => {
                   : product.image1
               }
               alt={product.category}
-              className=" max-w-80 max-h-64 hover:scale-110"
+              className=" w-72  h-64 hover:scale-110"
               onMouseOver={() => handleMouseOver(product.id)}
               onMouseOut={handleMouseOut}
             />
             <h3 className="font-sans_Regular text-sm pl-3 pt-4">
               {product.category}
             </h3>
-            <h1 className="ml-3 mr-3">{product.type}</h1>
+            <div className="max-w-xs max-h-xs">
+              <h1 className="ml-3 mr-3 ">{product.type}</h1>
+            </div>
             <br />
             <h3 className="font-sans_Regular text-lg pl-3">
               ${product.price}.00
             </h3>
-            <div className="flex items-center flex-col pt-2">
+            <div className="flex items-center flex-col ">
               <Button text="ADD TO CART" />
             </div>
           </div>

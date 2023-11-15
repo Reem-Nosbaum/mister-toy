@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import rightArrow from "../assets/images/angle-right.svg";
 import leftArrow from "../assets/images/angle-left.svg";
+import { popService } from "../services/pop.service";
 
 function Home() {
   const popServiceData = PopService();

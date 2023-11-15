@@ -12,7 +12,6 @@ const fetchSlides = async (dispatch) => {
     }
     const jsonData = await response.json();
     dispatch({ type: "SET_SLIDES", payload: jsonData });
-    console.log("Slides Data:", jsonData);
   } catch (error) {
     dispatch({ type: "SET_POP_SERVICE_ERROR", payload: error });
   }
@@ -26,7 +25,6 @@ const fetchProducts = async (dispatch) => {
     }
     const jsonData = await response.json();
     dispatch({ type: "SET_POP_SERVICE_DATA", payload: jsonData });
-    console.log("Products Data:", jsonData);
   } catch (error) {
     dispatch({ type: "SET_POP_SERVICE_ERROR", payload: error });
   }

@@ -5,7 +5,7 @@
       "category": "DRAGON BALL Z",
       "productType": "Pop!",
       "type": "POP! SUPER SAIYAN GOKU",
-      "price": 12.0,
+      "price": 12,
       "details": "Level up your Dragon Ball Z collection with this Pop! of Super Saiyan Goku. Collectible stands 3.75-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw5a1ded10/images/funko/3807-1.png?sw=346&sh=346",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw0d416594/images/funko/3807-2.png?sw=346&sh=346"
@@ -15,7 +15,7 @@
       "category": "DRAGON BALL Z",
       "productType": "Pop!",
       "type": "POP! VEGITO",
-      "price": 12.0,
+      "price": 12,
       "details": "Goku and Vegeta have successfully fused, creating the most powerful warrior, in order to protect Earth and your Dragon Ball Z collection from attackers. Collect Pop! Vegito to save your set from destruction. Vinyl figure is approximately 4.5-inches tall",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw9a5fce97/images/funko/48662-1.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwde0a7c46/images/funko/48662-2.png?sw=800&sh=800"
@@ -25,7 +25,7 @@
       "category": "DRAGON BALL Z",
       "productType": "Pop!",
       "type": "POP! GOKU AND FLYING NIMBUS",
-      "price": 12.0,
+      "price": 12,
       "details": "Master Roshi gave Goku the yellow cloud, Flying Nimbus, which he used to travel without using his own energy. It was a gift that had come in handy on more than one occasion. Bring Pop! Goku & Flying Nimbus into your Dragon Ball collection. Collectible stands approximately 3.75-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwcea5ef81/images/funko/7427-1.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw393f30e4/images/funko/7427-2.png?sw=800&sh=800"
@@ -35,7 +35,7 @@
       "category": "DRAGON BALL Z",
       "productType": "Pop!",
       "type": "POP! PERFECT CELL",
-      "price": 12.0,
+      "price": 12,
       "details": "Cell has attained his perfect form after absorbing Androids 17 and 18. Own this Dragon Ball Z villain for yourself with this Pop! Vinyl.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw4606323c/images/funko/3992-1.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw0008f6e7/images/funko/3992-2.png?sw=800&sh=800"
@@ -45,7 +45,7 @@
       "category": "DRAGON BALL Z",
       "productType": "Pop!",
       "type": "POP! DENDE",
-      "price": 15.0,
+      "price": 15,
       "details": "Dende has been chosen as Earth’s next Guardian. Help this exclusive Pop! Dende fulfill his role by welcoming the Namekian healer into your Dragon Ball Z collection. Vinyl figure is approximately 2.9-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwc70a8b42/images/funko/upload/69187a_POPAnimation_DBZ_Dende_GLAM-WEB.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw016ba692/images/funko/upload/69187a_POPAnimation_DBZ_Dende_FYE_GLAM-1-WEB.png?sw=800&sh=800"
@@ -55,10 +55,150 @@
       "category": "DRAGON BALL Z",
       "productType": "Pop!",
       "type": "POP! SUPER BUU WITH GHOST",
-      "price": 15.0,
+      "price": 15,
       "details": "Relentless, volatile, and irrational, Super Buu with Ghost will do whatever necessary, even destroying himself, to destroy Earth. Pit Goku and the Dragon Team against Pop! Super Buu with Ghost in your Dragon Ball Z collection. There’s a 1 in 6 chance you may find the glow-in-the-dark chase of Pop! Super Buu with Ghost. Vinyl figure is approximately 4.25-inches tall. ",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwe1621079/images/funko/upload/71556_POPAnimation_DBZ_Buu_wGhost_wCH_GLAM-WEB%20-%20Copy.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw87995499/images/funko/upload/71556_POPAnimation_DBZ_Buu_wGhost_wCH_CH_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 7,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! DR. GERO",
+      "price": 12,
+      "details": "Dr. Gero, or Android 20, is the mastermind behind the creation of Cell and the Red Ribbon Androids. In his ploy to defeat Goku, the Dragon Team, and take over Earth, Dr. Gero has taken on Pop! form to infiltrate your Dragon Ball Z collection. Vinyl figure is approximately 4.5-inches tall",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw3d915c3b/images/funko/48664-1.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwae68bedb/images/funko/48664-2.png?sw=800&sh=800"
+    },
+    {
+      "id": 8,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! GULDO",
+      "price": 12,
+      "details": "Strike a pose—and a blow to your enemies—with Pop! Guldo! Strengthen your Ginyu Force team when you welcome this boastful warrior into your Dragon Ball Z collection. Vinyl figure is approximately 3.55-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw434505a8/images/funko/upload/48667a_POPAnimation_DBZ_Guldo_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw4185bb03/images/funko/upload/48667a_POPAnimation_DBZ_Guldo_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 9,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! GINYU",
+      "price": 12,
+      "details": "Strike a pose—and a blow to your enemies—with Pop! Ginyu! Strengthen your Ginyu Force team when you welcome this merciless warrior into your Dragon Ball Z collection. Vinyl figure is approximately 3.9-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwd0a5366b/images/funko/upload/48669a_POPAnimation_DBZ_Ginyu_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwbe222570/images/funko/upload/48669a_POPAnimation_DBZ_Ginyu_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 10,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! RECOOME",
+      "price": 12,
+      "details": "Strike a pose—and a blow to your enemies—with Pop! Recoome! Strengthen your Ginyu Force team when you welcome this gargantuan warrior into your Dragon Ball Z collection. Vinyl figure is approximately 4.85-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwae34c59e/images/funko/upload/48668a_POPAnimation_DBZ_Recoome_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwc469e07f/images/funko/upload/48668a_POPAnimation_DBZ_Recoome_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 11,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! BURTER",
+      "price": 12,
+      "details": "Strike a pose—and a blow to your enemies—with Pop! Burter! Strengthen your Ginyu Force team when you welcome this gargantuan warrior into your Dragon Ball Z collection. Vinyl figure is approximately 4.75-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw5f40883b/images/funko/upload/48670a_POPAnimation_DBZ_Burter_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw48e51271/images/funko/upload/48670_DBZ_S10_Burter_POP_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 12,
+      "category": "DRAGON BALL Z",
+      "productType": "Pop!",
+      "type": "POP! JIECE",
+      "price": 12,
+      "details": "Strike a pose—and a blow to your enemies—with Pop! Jiece! Strengthen your Ginyu Force team when you welcome this eccentric warrior into your Dragon Ball Z collection. Vinyl figure is approximately 3.85-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwc6f7cf2f/images/funko/upload/48671a_POPAnimation_DBZ_Jiece_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw3417bf0a/images/funko/upload/48671a_POPAnimation_DBZ_Jiece_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 13,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! BLACK PANTHER (RETRO REIMAGINED)",
+      "price": 15,
+      "details": "Defend humanity and celebrate Disney’s 100th Anniversary with the exclusive, Retro Reimagined Pop! Black Panther! His vibranium mantle has been upgraded with this all-new look. Strengthen your team of heroes by bringing the King of Wakanda into your Marvel collection. Vinyl bobblehead is approximately 3.55-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwce400ae0/images/funko/upload/74478_Marvel_RetroBlackPanther_POP_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw3f24e48a/images/funko/upload/74478_Marvel_RetroBlackPanther_POP_GLAM-1-T-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 14,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! MEGA LOKI",
+      "price": 110,
+      "details": "Achieve your glorious purpose when you rise to greatness with exclusive Mega Pop! Loki! This mischievous Prince of Asgard is looking to stir up some trouble in your Marvel Studios’ Infinity Saga™ collection! Vinyl figure is approximately 18-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwb6d8e797/images/funko/upload/74749_Marvel_LokiwithHelmet_POP_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw9f03d57a/images/funko/upload/74749_Marvel_LokiwithHelmet_POP_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 15,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! PHOTON (GLOW)",
+      "price": 15,
+      "details": "Blast off on a galactic adventure with Monica Rambeau as Pop! Photon as she masters her newfound powers and reunites with Carol Danvers. Complete your Marvel Studios’ The Marvels collection with this exclusive, glow-in-the-dark hero! Vinyl bobblehead is approximately 4.8-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwf4dd2e34/images/funko/upload/68286_POPVinyl_Marvels_POP5_GLAM-1-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwf299aa0a/images/funko/upload/68286_POPVinyl_Marvels_POP5_GLAM-1-D-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 16,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! IRON SPIDER UNMASKED WITH GAUNTLET",
+      "price": 12,
+      "details": "Swing into action with this exclusive, unmasked Pop! Iron Spider with Gauntlet. Your Avengers: Endgame collection needs every hero assembled to defeat Thanos, and Spider-Man is ready to defend the universe. Vinyl figure is approximately 3.75-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw5e17bba6/images/funko/upload/68253_MARVEL_Endgame_Spiderman_Gauntlet_POP_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw43e49c5f/images/funko/upload/68253_MARVEL_Endgame_Spiderman_Gauntlet_POP_GLAM-1-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 17,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! THE HIGH EVOLUTIONARY",
+      "price": 15,
+      "details": "Create the ideal world with Pop! The High Evolutionary! This exclusive geneticist is looking to engineer the perfect species in your Marvel Studios’ Guardians of the Galaxy Vol. 3 collection. Vinyl bobblehead is approximately 3.85-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dweba3f861/images/funko/upload/74099_GOTG3_HighEvolutionary_POP_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw6cc55e13/images/funko/upload/74099_GOTG3_HighEvolutionary_POP_GLAM-1-FW-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 18,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! CIVIL WAR: IRON MAN",
+      "price": 15,
+      "details": "Defend humanity with Marvel’s Pop! Iron Man! Complete your Marvel Studios’ Captain America: Civil War collection with this brilliant inventor in his red and gold suit of armor and assemble your team to build a scene of your favorite heroes. Comprised of 12 separate figures, each Pop! in this series can be displayed on its own or nested with other figures from the set. Assemble the complete battle or create your own unique scene by mixing and matching your favorite characters.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwa47ac85a/images/funko/upload/70098_POPMarvel_CWBAS_IronMan_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw79422eab/images/funko/upload/70098_POPMarvel_CWBAS_IronMan_GLAM-1-AM-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 19,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! CIVIL WAR: FALCON",
+      "price": 15,
+      "details": "Defend humanity with Marvel’s Pop! Falcon! Complete your Marvel Studios’ Captain America: Civil War collection with this avian warrior and assemble your team to build a scene of your favorite heroes. Comprised of 12 separate figures, each Pop! in this series can be displayed on its own or nested with other figures from the set. Assemble the complete battle or create your own unique scene by mixing and matching your favorite characters. Each figure is fixed to its base for ease of display.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw6ab11520/images/funko/upload/70099_POPMarvel_CWBAS_Falcon_GLAM-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw8a15ca17/images/funko/upload/70099_POPMarvel_CWBAS_Falcon_GLAM-1-AM-WEB.png?sw=800&sh=800"
+    },
+    {
+      "id": 20,
+      "category": "MARVEL",
+      "productType": "Pop!",
+      "type": "POP! NICK FURY WITH FLERKITTEN",
+      "price": 12,
+      "details": "Blast off on a galactic adventure with Pop! Nick Fury with Flerkitten as he works to defend the universe against evil. Complete your Marvel Studios’ The Marvels collection with this tactical hero! Vinyl bobblehead is approximately 3.75-inches tall.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw24375fb0/images/funko/upload/67640_Marvels_POP8_GLAM-1-WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw96f081ad/images/funko/upload/67640_Marvels_POP8_GLAM-1-1-WEB.png?sw=800&sh=800"
     }
   ],
   "slides": [
