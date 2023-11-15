@@ -1,8 +1,7 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { popList } from "../store/popSlice";
 
 function Fandoms() {
-  const pops = useSelector((state) => state.pop.value);
   const dispatch = useDispatch();
 
   return (

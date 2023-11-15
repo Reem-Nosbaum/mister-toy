@@ -2,12 +2,8 @@ import { useEffect, useState } from "react";
 import rightArrow from "../assets/images/angle-right.svg";
 import leftArrow from "../assets/images/angle-left.svg";
 import dot from "../assets/images/dot.svg";
-import { useDispatch, useSelector } from "react-redux";
 
 const ImageSlider = () => {
-  const dispatch = useDispatch();
-  const slides = useSelector((state) => state.slides);
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoplay, setAotuplay] = useState(false);
 
