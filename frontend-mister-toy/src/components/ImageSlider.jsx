@@ -5,20 +5,24 @@ import dot from "../assets/images/dot.svg";
 import { useDispatch, useSelector } from "react-redux";
 
 const ImageSlider = () => {
-  const slides = useSelector((state) => state.slides);
   const dispatch = useDispatch();
+  const slides = useSelector((state) => state.slides);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [autoplay, setAotuplay] = useState(true);
+  const [autoplay, setAotuplay] = useState(false);
 
   const nextSlide = () => {
-    const newIndex = (currentIndex + 1) % slides.length;
-    setCurrentIndex(newIndex);
+    if (slides) {
+      const newIndex = (currentIndex + 1) % slides.length;
+      setCurrentIndex(newIndex);
+    }
   };
 
   const prevSlide = () => {
-    const newIndex = (currentIndex - 1 + slides.length) % slides.length;
-    setCurrentIndex(newIndex);
+    if (slides) {
+      const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+      setCurrentIndex(newIndex);
+    }
   };
 
   const handelAutoplay = (e) => {
@@ -42,7 +46,7 @@ const ImageSlider = () => {
       if (autoplay) {
         nextSlide();
       }
-    }, 4000);
+    }, 3000);
 
     window.addEventListener("keydown", handleKeyPress);
 
@@ -53,7 +57,7 @@ const ImageSlider = () => {
   }, [currentIndex, autoplay]);
 
   if (!slides || slides.length === 0 || !slides[currentIndex]) {
-    return null; // or some loading indicator if you prefer
+    return null;
   }
 
   return (
