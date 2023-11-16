@@ -5,7 +5,7 @@ import dot from "../assets/images/dot.svg";
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [autoplay, setAotuplay] = useState(false);
+  const [autoplay, setAotuplay] = useState(true);
 
   const nextSlide = () => {
     if (slides) {
