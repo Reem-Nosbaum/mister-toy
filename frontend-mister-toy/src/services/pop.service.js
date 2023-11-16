@@ -6,6 +6,7 @@ export const popService = {
   removePopById,
   updatePopPrice,
   newPop,
+  getSlides,
   // save,
   // getEmptyPop,
 };
@@ -13,6 +14,17 @@ export const popService = {
 async function getPops() {
   try {
     const response = await fetch(`${api}/products`);
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+async function getSlides() {
+  try {
+    const response = await fetch(`${api}/slides`);
     const data = await response.json();
     console.log(data);
     return data;

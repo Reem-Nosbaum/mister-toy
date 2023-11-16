@@ -3,7 +3,7 @@ import rightArrow from "../assets/images/angle-right.svg";
 import leftArrow from "../assets/images/angle-left.svg";
 import dot from "../assets/images/dot.svg";
 
-const ImageSlider = () => {
+const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoplay, setAotuplay] = useState(false);
 

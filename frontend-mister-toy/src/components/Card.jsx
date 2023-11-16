@@ -11,8 +11,6 @@ const Card = ({ pops }) => {
     setHoveredProductId(null);
   };
 
-  console.log(pops);
-
   return (
     <div className="flex items-center ">
       {pops &&
