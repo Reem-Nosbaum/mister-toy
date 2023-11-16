@@ -1,9 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import Card from "../components/Card";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { fetchSlides } from "../store/slideSlice";
 import ImageSlider from "../components/ImageSlider";
 import { fetchPops } from "../store/popSlice";
+import rightArrow from "../assets/images/angle-right.svg";
+import leftArrow from "../assets/images/angle-left.svg";
 
 function Home() {
   const dispatch = useDispatch();
@@ -14,10 +16,20 @@ function Home() {
   const popLoading = useSelector((state) => state.pop.loading);
   const popError = useSelector((state) => state.pop.error);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   useEffect(() => {
     dispatch(fetchSlides());
     dispatch(fetchPops());
   }, [dispatch]);
+
+  const handleNext = () => {
+    setCurrentIndex(Math.min(currentIndex + 5, pops.length - 5));
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(Math.max(currentIndex - 5, 0));
+  };
 
   if (slideLoading || popLoading) {
     return <div>Loading...</div>;
@@ -33,11 +45,24 @@ function Home() {
       <h1 className="text-6xl items-center justify-center flex pt-3">
         NEW PICKS FOR YOU!
       </h1>
-      <div className="flex justify-center space-x-10">
-        <div className="flex items-center"></div>
-        <div className="flex">
-          <Card pops={pops} />
+      <div className="flex justify-center h-[500px]">
+        <div className=" flex items-center">
+          {currentIndex > 0 && (
+            <button onClick={handlePrev}>
+              <img src={leftArrow} alt="right-arrow" className="w-10 h-10" />
+            </button>
+          )}
+          <Card
+            pops={pops}
+            startIndex={currentIndex}
+            endIndex={currentIndex + 5}
+          />
         </div>
+        {currentIndex < pops.length - 5 && (
+          <button onClick={handleNext}>
+            <img src={rightArrow} alt="right-arrow" className="w-10 h-10" />
+          </button>
+        )}
       </div>
     </div>
   );
