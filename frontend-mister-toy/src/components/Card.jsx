@@ -13,23 +13,23 @@ const Card = ({ pops, startIndex, endIndex }) => {
   };
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-wrap items-center gap-3 justify-center">
       {pops.slice(startIndex, endIndex).map((pop) => (
         <div
           key={pop.id}
-          className="text-black w-72  border-stone-100 border-4 rounded-xl flex flex-col"
+          className="text-black w-72  border-stone-100 border-4 rounded-xl flex flex-col bg-white mb-4"
         >
           <img
             src={hoveredProductId === pop.id ? pop.image2 : pop.image1}
             alt={pop.category}
-            className=" w-64  h-64 hover:scale-110"
+            className="w-64 h-64 hover:scale-110"
             onMouseOver={() => handleMouseOver(pop.id)}
             onMouseOut={handleMouseOut}
           />
           <h3 className="font-sans_Regular text-sm pl-3 pt-4">
             {pop.category}
           </h3>
-          <h1 className="ml-3 mr-3 overflow-hidden whitespace-nowrap text-ellipsis">
+          <h1 className="ml-3 mr-3 overflow-hidden whitespace-no-wrap truncate">
             {pop.type}
           </h1>
 

@@ -7,11 +7,9 @@ function Fandoms() {
   return (
     <div className="">
       Shop All
-      <div className=" w-full h-[700px] flex justify-center items-center  grid-cols-4 gap-4">
-        <div className="bg-stone-300 ">
-          Fandoms
-          <Card pops={pops} startIndex={0} endIndex={5} />
-        </div>
+      <div className="bg-stone-100 p-10 flex flex-wrap ">
+        Fandoms
+        <Card pops={pops} startIndex={0} endIndex={20} />
       </div>
     </div>
   );
