@@ -26,7 +26,7 @@ function Fandoms() {
   return (
     <div className="bg-stone-100 p-10 flex flex-wrap ">
       <div className="flex flex-col">
-        <h1 className="block mb-2 text-lg">Select an Category</h1>
+        <h1 className=" mb-2 text-lg">Select an Category</h1>
         <ul className="bg-stone-200 ">
           <li
             className="hover:bg-stone-100 cursor-pointer "
@@ -49,8 +49,8 @@ function Fandoms() {
         </ul>
       </div>
       <div className="flex flex-col pl-8">
-        <h1 className="block mb-2 text-lg">Select an Price</h1>
-        <ul className="bg-stone-200 ">
+        <h1 className=" mb-2 text-lg">Select an Price</h1>
+        <ul className="bg-stone-200 w-full h-full">
           <li
             className="hover:bg-stone-100 cursor-pointer"
             onClick={() => handlePriceChange("lowToHigh")}
