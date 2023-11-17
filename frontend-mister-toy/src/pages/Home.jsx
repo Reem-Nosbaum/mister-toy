@@ -49,7 +49,7 @@ function Home() {
         <div className=" flex items-center">
           {currentIndex > 0 && (
             <button onClick={handlePrev}>
-              <img src={leftArrow} alt="right-arrow" className="w-10 h-10" />
+              <img src={leftArrow} alt="left-arrow" className="w-10 h-10" />
             </button>
           )}
           <Card

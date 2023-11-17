@@ -15,7 +15,7 @@ async function getPops() {
   try {
     const response = await fetch(`${api}/products`);
     const data = await response.json();
-    console.log(data);
+
     return data;
   } catch (err) {
     console.error(err);
@@ -26,7 +26,7 @@ async function getSlides() {
   try {
     const response = await fetch(`${api}/slides`);
     const data = await response.json();
-    console.log(data);
+
     return data;
   } catch (err) {
     console.error(err);
@@ -37,7 +37,7 @@ async function getById(popId) {
   try {
     const response = await fetch(`${api}/products/${popId}`);
     const data = await response.json();
-    console.log(data);
+
     return data;
   } catch (err) {
     console.error(err);
@@ -55,7 +55,7 @@ async function removePopById(popId) {
     }
 
     const data = await response.json();
-    console.log(data);
+
     return data;
   } catch (error) {
     console.error("Error removing pop:", error);
@@ -80,7 +80,7 @@ async function updatePopPrice(popId, price) {
     }
 
     const data = await response.json();
-    console.log(data);
+
     return data;
   } catch (error) {
     console.error("Error updating pop price:", error);
@@ -119,7 +119,7 @@ async function newPop(
     }
 
     const data = await response.json();
-    console.log("New pop created:", data);
+
     return data;
   } catch (error) {
     console.error("Error creating new pop:", error);
