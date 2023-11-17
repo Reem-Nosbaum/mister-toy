@@ -21,7 +21,7 @@ function Home() {
   useEffect(() => {
     dispatch(fetchSlides());
     dispatch(fetchPops());
-  }, [dispatch]);
+  }, []);
 
   const handleNext = () => {
     setCurrentIndex(Math.min(currentIndex + 5, pops.length - 5));

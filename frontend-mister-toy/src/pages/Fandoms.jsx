@@ -7,10 +7,9 @@ function Fandoms() {
   const pops = useSelector((state) => state.pop.pops);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedPrice, setSelectedPrice] = useState("");
-
+  const [isVisible, setIsVisible] = useState(false);
   const dispatch = useDispatch();
 
-  console.log(selectedCategory);
   useEffect(() => {
     dispatch(fetchPops());
   }, [dispatch]);
