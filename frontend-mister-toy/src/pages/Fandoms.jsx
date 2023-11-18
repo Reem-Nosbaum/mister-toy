@@ -7,7 +7,9 @@ function Fandoms() {
   const pops = useSelector((state) => state.pop.pops);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedPrice, setSelectedPrice] = useState("");
-  const [isVisible, setIsVisible] = useState(false);
+  const [isCategoryVisible, setIsCategoryVisible] = useState(false);
+  const [isPriceVisible, setIsPriceVisible] = useState(false);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,72 +18,92 @@ function Fandoms() {
 
   const handleCategoryChange = (value) => {
     setSelectedCategory(value);
+    setIsCategoryVisible(false);
   };
 
   const handlePriceChange = (value) => {
     setSelectedPrice(value);
+    setIsPriceVisible(false);
   };
 
   return (
-    <div className="bg-stone-100 p-10 flex flex-wrap ">
-      <div className="flex flex-col">
-        <h1 className=" mb-2 text-lg">Select an Category</h1>
-        <ul className="bg-stone-200 ">
-          <li
-            className="hover:bg-stone-100 cursor-pointer "
-            onClick={() => handleCategoryChange("")}
-          >
-            All
-          </li>
-          <li
-            className="hover:bg-stone-100 cursor-pointer"
-            onClick={() => handleCategoryChange("MARVEL")}
-          >
-            MARVEL
-          </li>
-          <li
-            className="hover:bg-stone-100 cursor-pointer"
-            onClick={() => handleCategoryChange("DRAGON BALL Z")}
-          >
-            DRAGON BALL Z
-          </li>
+    <div>
+      <h1 className="text-6xl pt-2 pl-3 pb-3">Fandoms</h1>
+      <div className="relative z-10 text-lg ">
+        <ul
+          className="absolute bg-stone-100 border-4 border-stone-800 w-40 cursor-pointer left-24 text-2xl text-center"
+          onMouseEnter={() => setIsCategoryVisible(true)}
+          onMouseLeave={() => setIsCategoryVisible(false)}
+        >
+          Category
+          {isCategoryVisible && (
+            <>
+              <li
+                className="hover:bg-stone-400 cursor-pointer  "
+                onClick={() => handleCategoryChange("")}
+              >
+                All
+              </li>
+              <li
+                className="hover:bg-stone-400 cursor-pointer"
+                onClick={() => handleCategoryChange("MARVEL")}
+              >
+                MARVEL
+              </li>
+              <li
+                className="hover:bg-stone-400 cursor-pointer"
+                onClick={() => handleCategoryChange("DRAGON BALL Z")}
+              >
+                DRAGON BALL Z
+              </li>
+            </>
+          )}
         </ul>
       </div>
-      <div className="flex flex-col pl-8">
-        <h1 className=" mb-2 text-lg">Select an Price</h1>
-        <ul className="bg-stone-200 w-full h-full">
-          <li
-            className="hover:bg-stone-100 cursor-pointer"
-            onClick={() => handlePriceChange("lowToHigh")}
-          >
-            Price Low To High
-          </li>
-          <li
-            className="hover:bg-stone-100 cursor-pointer"
-            onClick={() => handlePriceChange("highToLow")}
-          >
-            Price High To Low
-          </li>
+      <div className="relative z-10 text-lg ">
+        <ul
+          className="absolute bg-stone-100 border-4 border-stone-800 w-40 cursor-pointer left-72 text-2xl text-center"
+          onMouseEnter={() => setIsPriceVisible(true)}
+          onMouseLeave={() => setIsPriceVisible(false)}
+        >
+          Price
+          {isPriceVisible && (
+            <>
+              <li
+                className="hover:bg-stone-400 cursor-pointer"
+                onClick={() => handlePriceChange("lowToHigh")}
+              >
+                Price Low To High
+              </li>
+              <li
+                className="hover:bg-stone-400 cursor-pointer"
+                onClick={() => handlePriceChange("highToLow")}
+              >
+                Price High To Low
+              </li>
+            </>
+          )}
         </ul>
       </div>
-
-      <Card
-        pops={pops
-          .filter(
-            (pop) =>
-              selectedCategory === "" || pop.category === selectedCategory
-          )
-          .sort((a, b) => {
-            if (selectedPrice === "lowToHigh") {
-              return a.price - b.price;
-            } else if (selectedPrice === "highToLow") {
-              return b.price - a.price;
-            }
-            return 0;
-          })}
-        startIndex={0}
-        endIndex={20}
-      />
+      <div className="bg-stone-100 p-10 flex flex-wrap ">
+        <Card
+          pops={pops
+            .filter(
+              (pop) =>
+                selectedCategory === "" || pop.category === selectedCategory
+            )
+            .sort((a, b) => {
+              if (selectedPrice === "lowToHigh") {
+                return a.price - b.price;
+              } else if (selectedPrice === "highToLow") {
+                return b.price - a.price;
+              }
+              return 0;
+            })}
+          startIndex={0}
+          endIndex={20}
+        />
+      </div>
     </div>
   );
 }
