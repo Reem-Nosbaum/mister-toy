@@ -14,15 +14,13 @@ function Cart() {
 
   return (
     <div>
-      <div className="text-4xl pb-10 pt-1 flex flex-col">MY CART</div>
-      <div className="flex gap-52">
-        <h1 className="text-sm font-serif flex items-start pl-2">ITEM</h1>
-        <h1 className="text-sm font-serif">QTY</h1>
-        <h1 className="text-sm font-serif pr-3">TOTAL</h1>
+      <div className="text-4xl pb-10  pt-8">MY CART</div>
+      <div className="flex">
+        <CartList pops={pops} />
+        <div className="w-full h-96 bg-stone-600 items-center  justify-center flex">
+          SUMMARY
+        </div>
       </div>
-
-      <div className=" border-b border-stone-950 my-2"></div>
-      <CartList pops={pops} />
     </div>
   );
 }

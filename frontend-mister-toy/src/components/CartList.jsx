@@ -3,19 +3,31 @@ import Trash from "../assets/styles/Trash";
 function CartList({ pops }) {
   return (
     <div>
-      <div className="flex flex-col p-10">
-        {pops.slice(0, 2).map((pop) => (
-          <div key={pop.id} className="flex items-center">
-            <img src={pop.image1} alt={pop.category} className="w-40 h-40" />
-            <div className="ml-3">
-              <h3 className="font-sans_Regular text-sm pt-4">{pop.category}</h3>
-              <h1 className="overflow-hidden whitespace-no-wrap truncate">
-                {pop.type}
-              </h1>
-              <div className=" relative left-72 bottom-7">
-                <Trash />
-              </div>
-              <select className="relative left-96 bottom-12">
+      <div className="flex flex-col  w-[55rem] pl-8 ">
+        <div className="border-b border-stone-950 flex font-sans_Regular items-center">
+          <h1 className="">ITEM</h1>
+          <div className="flex w-full justify-end  space-x-52 ">
+            <h1 className="">QTY</h1>
+            <h1 className="">TOTAL</h1>
+          </div>
+        </div>
+        {pops.slice(0, 10).map((pop) => (
+          <div
+            key={pop.id}
+            className="flex items-center border-b border-stone-950"
+          >
+            <div className="flex w-full items-center ">
+              <img src={pop.image1} alt={pop.category} className="w-40 h-40" />
+              <h3 className="font-sans_Regular text-sm pl-16">
+                {pop.category} <br />
+                <div className=" font-semibold text-lg">{pop.type}</div>
+              </h3>
+            </div>
+            <div className="pl-10">
+              <Trash />
+            </div>
+            <div className="flex w-full  justify-end space-x-52">
+              <select>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -27,13 +39,10 @@ function CartList({ pops }) {
                 <option>9</option>
                 <option>10</option>
               </select>
-              <h3 className="font-sans_Regular text-lg relative left-[600px] bottom-20">
-                ${pop.price}.00
-              </h3>
+              <h3 className="font-sans_Regular text-lg ">${pop.price}.00</h3>
             </div>
           </div>
         ))}
-        <div className=" border-b border-stone-950 my-2"></div>
       </div>
     </div>
   );
