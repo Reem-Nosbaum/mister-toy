@@ -11,7 +11,7 @@ function CartList({ pops }) {
             <h1 className="">TOTAL</h1>
           </div>
         </div>
-        {pops.slice(0, 10).map((pop) => (
+        {pops.slice(0, 3).map((pop) => (
           <div
             key={pop.id}
             className="flex items-center border-b border-stone-950"
