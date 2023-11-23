@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import Card from "../components/Card";
+
 import CartList from "../components/CartList";
 import { useEffect } from "react";
-import { fetchPops } from "../store/popSlice";
+import { fetchPops } from "../store/popAction";
 import Summary from "../components/Summary";
 
 function Cart() {

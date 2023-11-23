@@ -7,6 +7,7 @@ export const popService = {
   updatePopPrice,
   newPop,
   getSlides,
+  updateInCart,
   // save,
   // getEmptyPop,
 };
@@ -84,6 +85,41 @@ async function updatePopPrice(popId, price) {
     return data;
   } catch (error) {
     console.error("Error updating pop price:", error);
+    throw error;
+  }
+}
+
+async function updateInCart(pop) {
+  try {
+    const response = await fetch(`${api}/products/${pop.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: pop.id,
+        category: pop.category,
+        productType: pop.productType,
+        type: pop.type,
+        price: pop.price,
+        details: pop.details,
+        image1: pop.image1,
+        image2: pop.image2,
+        inCart: pop.inCart,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(
+        `Failed to update pop inCart. Status: ${response.status}`
+      );
+    }
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.error("Error updating pop inCart:", error);
     throw error;
   }
 }

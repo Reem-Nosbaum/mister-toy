@@ -20,7 +20,7 @@ function Summary() {
         <h1 className="  text-xl pr-3 pt-3">$165.00</h1>
       </div>
       <div className="flex items-center justify-center p-3">
-        <Button text={"CHECKOUT"} />
+        <Button text={"CHECKOUT"} display={true} />
       </div>
     </div>
   );

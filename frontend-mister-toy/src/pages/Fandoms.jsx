@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import Card from "../components/Card";
 import { useEffect, useState } from "react";
-import { fetchPops } from "../store/popSlice";
+import { fetchPops } from "../store/popAction";
 
 function Fandoms() {
   const pops = useSelector((state) => state.pop.pops);
@@ -26,6 +26,7 @@ function Fandoms() {
     setIsPriceVisible(false);
   };
 
+  console.log(pops);
   return (
     <div>
       <h1 className="text-6xl pt-2 pl-3 pb-3">Fandoms</h1>

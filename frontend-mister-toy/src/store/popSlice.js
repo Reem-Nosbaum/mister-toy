@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { popService } from "../services/pop.service";
 
 const initialState = {
   pops: [],
@@ -28,16 +27,5 @@ export const popSlice = createSlice({
 });
 
 export const { popsSuccess, popsLoading, popsError } = popSlice.actions;
-
-// Thunk for fetching pops
-export const fetchPops = () => async (dispatch) => {
-  try {
-    dispatch(popsLoading());
-    const data = await popService.getPops();
-    dispatch(popsSuccess(data));
-  } catch (error) {
-    dispatch(popsError(error.message));
-  }
-};
 
 export default popSlice.reducer;

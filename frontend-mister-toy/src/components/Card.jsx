@@ -1,9 +1,12 @@
-import Button from "../assets/styles/Button";
 import { useState } from "react";
+import Button from "../assets/styles/Button";
+
+import { useDispatch } from "react-redux";
+import { updateCart } from "../store/popAction";
 
 const Card = ({ pops, startIndex, endIndex }) => {
   const [hoveredProductId, setHoveredProductId] = useState(null);
-
+  const dispatch = useDispatch();
   const handleMouseOver = (popId) => {
     setHoveredProductId(popId);
   };
@@ -13,11 +16,16 @@ const Card = ({ pops, startIndex, endIndex }) => {
   };
 
   const handleAddToCart = (pop) => {
+    const updatedPop = { ...pop, inCart: "true" }; // Create a new object with the updated property
+    dispatch(updateCart(updatedPop));
+    console.log(updatedPop.inCart);
+
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
-    existingCartItems.push(pop);
+    existingCartItems.push(updatedPop);
     localStorage.setItem("cart", JSON.stringify(existingCartItems));
   };
 
+  if (!pops) return <h1>loading</h1>;
   return (
     <div className="flex flex-wrap items-center gap-3 justify-center">
       {pops.slice(startIndex, endIndex).map((pop) => (
@@ -42,9 +50,9 @@ const Card = ({ pops, startIndex, endIndex }) => {
           <h3 className="font-sans_Regular text-lg pl-3">${pop.price}.00</h3>
           <div className="flex items-center flex-col pb-3 pt-7">
             <Button
-              text={"ADD TO CART"}
+              text={pop.inCart === "false" ? "ADD TO CART" : "ADDED"}
               onClick={() => handleAddToCart(pop)}
-              disabled={true} // Fix the prop name here
+              inCart={pop.inCart}
             />
           </div>
         </div>
