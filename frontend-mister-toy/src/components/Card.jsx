@@ -3,6 +3,7 @@ import Button from "../assets/styles/Button";
 
 import { useDispatch } from "react-redux";
 import { updateCart } from "../store/popAction";
+import { popService } from "../services/pop.service";
 
 const Card = ({ pops, startIndex, endIndex }) => {
   const [hoveredProductId, setHoveredProductId] = useState(null);
@@ -16,7 +17,7 @@ const Card = ({ pops, startIndex, endIndex }) => {
   };
 
   const handleAddToCart = (pop) => {
-    const updatedPop = { ...pop, inCart: "true" }; // Create a new object with the updated property
+    const updatedPop = { ...pop, inCart: "true" };
     dispatch(updateCart(updatedPop));
     console.log(updatedPop.inCart);
 
@@ -47,14 +48,32 @@ const Card = ({ pops, startIndex, endIndex }) => {
             {pop.type}
           </h1>
           <br />
-          <h3 className="font-sans_Regular text-lg pl-3">${pop.price}.00</h3>
+          <h3 className="  text-lg pl-3">${pop.price}.00</h3>
           <div className="flex items-center flex-col pb-3 pt-7">
             <Button
-              text={pop.inCart === "false" ? "ADD TO CART" : "ADDED"}
+              text={pop.inCart === "false" ? "ADD TO CART" : "IN CART"}
               onClick={() => handleAddToCart(pop)}
               inCart={pop.inCart}
             />
           </div>
+          {pop.inCart === "true" ? (
+            <div className=" absolute">
+              <select className=" top-[403px] left-8 relative rounded-full w-14 text-center cursor-pointer">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       ))}
     </div>

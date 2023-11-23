@@ -1,5 +1,10 @@
 import { popService } from "../services/pop.service";
-import { popsError, popsLoading, popsSuccess } from "./popSlice";
+import {
+  popsError,
+  popsLoading,
+  popsSuccess,
+  updatePopSuccess,
+} from "./popSlice";
 
 export const fetchPops = () => async (dispatch) => {
   try {
@@ -12,11 +17,11 @@ export const fetchPops = () => async (dispatch) => {
   }
 };
 
-export const updateCart = (popId, value) => async (dispatch) => {
+export const updateCart = (pop) => async (dispatch) => {
   try {
     dispatch(popsLoading());
-    const updatedPopCart = await popService.updateInCart(popId, value);
-    dispatch(popsSuccess(updatedPopCart));
+    const updatedPopCart = await popService.updateInCart(pop);
+    dispatch(updatePopSuccess(updatedPopCart));
   } catch (error) {
     dispatch(popsError(error.message));
   }
