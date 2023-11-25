@@ -1,6 +1,16 @@
+import { useDispatch } from "react-redux";
 import Trash from "../assets/styles/Trash";
+import { removeCart } from "../store/popAction";
 
 function CartList({ pops }) {
+  const dispatch = useDispatch();
+
+  const handleRemoveFromCart = (pop) => {
+    const removePop = { ...pop, inCart: "false" };
+    dispatch(removeCart(removePop));
+    console.log(removePop.inCart);
+  };
+
   return (
     <div>
       <div className="flex flex-col  w-[55rem] pl-8 ">
@@ -11,7 +21,7 @@ function CartList({ pops }) {
             <h1 className="">TOTAL</h1>
           </div>
         </div>
-        {pops.slice(0, 3).map((pop) => (
+        {pops.map((pop) => (
           <div
             key={pop.id}
             className="flex items-center border-b border-stone-950"
@@ -24,7 +34,9 @@ function CartList({ pops }) {
               </h3>
             </div>
             <div className="pl-10">
-              <Trash />
+              <button onClick={() => handleRemoveFromCart(pop)}>
+                <Trash />
+              </button>
             </div>
             <div className="flex w-full  justify-end space-x-52">
               <select>

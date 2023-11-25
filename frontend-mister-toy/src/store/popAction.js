@@ -26,3 +26,13 @@ export const updateCart = (pop) => async (dispatch) => {
     dispatch(popsError(error.message));
   }
 };
+
+export const removeCart = (pop) => async (dispatch) => {
+  try {
+    dispatch(popsLoading());
+    const removePopCart = await popService.updateInCart(pop);
+    dispatch(updatePopSuccess(removePopCart));
+  } catch (error) {
+    dispatch(popsError(error.message));
+  }
+};

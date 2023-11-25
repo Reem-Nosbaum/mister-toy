@@ -15,10 +15,10 @@ function Cart() {
 
   return (
     <div className="">
-      <div className=" text-4xl pb-10  pt-8">MY CART</div>
+      <div className=" text-4xl pb-10  pt-8 pl-7">MY CART</div>
       <div className="flex w-full h-full ">
-        <CartList pops={pops} />
-        <Summary />
+        <CartList pops={pops.filter((pop) => pop.inCart === "true")} />
+        <Summary pops={pops.filter((pop) => pop.inCart === "true")} />
       </div>
     </div>
   );

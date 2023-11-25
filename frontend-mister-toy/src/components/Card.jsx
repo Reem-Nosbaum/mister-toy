@@ -3,7 +3,6 @@ import Button from "../assets/styles/Button";
 
 import { useDispatch } from "react-redux";
 import { updateCart } from "../store/popAction";
-import { popService } from "../services/pop.service";
 
 const Card = ({ pops, startIndex, endIndex }) => {
   const [hoveredProductId, setHoveredProductId] = useState(null);

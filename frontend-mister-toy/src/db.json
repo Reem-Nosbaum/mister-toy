@@ -9,7 +9,7 @@
       "details": "Level up your Dragon Ball Z collection with this Pop! of Super Saiyan Goku. Collectible stands 3.75-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw5a1ded10/images/funko/3807-1.png?sw=346&sh=346",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw0d416594/images/funko/3807-2.png?sw=346&sh=346",
-      "inCart": "false"
+      "inCart": "true"
     },
     {
       "id": 2,
@@ -31,7 +31,7 @@
       "details": "Master Roshi gave Goku the yellow cloud, Flying Nimbus, which he used to travel without using his own energy. It was a gift that had come in handy on more than one occasion. Bring Pop! Goku & Flying Nimbus into your Dragon Ball collection. Collectible stands approximately 3.75-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwcea5ef81/images/funko/7427-1.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw393f30e4/images/funko/7427-2.png?sw=800&sh=800",
-      "inCart": "false"
+      "inCart": "true"
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "details": "Cell has attained his perfect form after absorbing Androids 17 and 18. Own this Dragon Ball Z villain for yourself with this Pop! Vinyl.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw4606323c/images/funko/3992-1.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw0008f6e7/images/funko/3992-2.png?sw=800&sh=800",
-      "inCart": "false"
+      "inCart": "true"
     },
     {
       "id": 5,
@@ -215,7 +215,10 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwde2f575b/images/funko/page-designer/category/Feature-GiftGuide-StockingStuffers-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw017b1510/images/funko/page-designer/hero/Feature-v2GiftGuide-StockingStuffers-Product.png",
       "title": "STOCKING STUFFERS",
-      "secondaryTitle": ["FIRESIDE FAVORITES", "FOR THE HOLIDAYS"],
+      "secondaryTitle": [
+        "FIRESIDE FAVORITES",
+        "FOR THE HOLIDAYS"
+      ],
       "paragraph": [
         "Make a Big Impact With Little Stocking Stuffer Gifts From Funko.",
         "Shop Stocking Stuffers in Time for the Holidays."
@@ -225,7 +228,10 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwd588e448/images/funko/page-designer/category/Feature-TheMarvels-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwe372c2f7/images/funko/page-designer/hero/Feature-TheMarvels-Product-69192.png",
       "title": "THE MARVELS",
-      "secondaryTitle": ["HIGHER, FURTHER", "FASTER"],
+      "secondaryTitle": [
+        "HIGHER, FURTHER",
+        "FASTER"
+      ],
       "paragraph": [
         "Protect Your Home Planet with Pop! Ms. Marvel! New Collectibles from",
         "Marvel Studios’ The Marvels are Available Now."
@@ -235,7 +241,9 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw030cd8fc/images/funko/page-designer/category/Feature-JayAndSilentBob-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw8df10e86/images/funko/page-designer/hero/Feature-JayAndSilentBob-Product.png",
       "title": "THIRD SHIFT",
-      "secondaryTitle": ["BROWSE THE AISLES"],
+      "secondaryTitle": [
+        "BROWSE THE AISLES"
+      ],
       "paragraph": [
         "Make a Quick Stop to Pick Up New Clerks III Pops! Expand Your Pop!",
         "Set."
