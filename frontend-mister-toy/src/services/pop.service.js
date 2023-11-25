@@ -104,6 +104,7 @@ async function updateInCart(pop) {
         image1: pop.image1,
         image2: pop.image2,
         inCart: pop.inCart,
+        QTY: pop.QTY,
       }),
     });
 

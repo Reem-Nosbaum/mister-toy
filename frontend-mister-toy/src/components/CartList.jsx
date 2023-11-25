@@ -1,14 +1,31 @@
 import { useDispatch } from "react-redux";
 import Trash from "../assets/styles/Trash";
-import { removeCart } from "../store/popAction";
+import { removeCart, updateCart } from "../store/popAction";
 
 function CartList({ pops }) {
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = (pop) => {
-    const removePop = { ...pop, inCart: "false" };
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const updatedCart = cart.filter((item) => item.id !== pop.id);
+
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+    const removePop = { ...pop, inCart: false };
     dispatch(removeCart(removePop));
-    console.log(removePop.inCart);
+  };
+
+  const handleQuantityChange = (pop, quantity) => {
+    const updatedPop = { ...pop, QTY: quantity };
+    dispatch(updateCart(updatedPop));
+    console.log(updatedPop.QTY);
+
+    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const updatedCart = existingCartItems.map((item) =>
+      item.id === pop.id ? { ...item, QTY: quantity } : item
+    );
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
   return (
@@ -39,19 +56,20 @@ function CartList({ pops }) {
               </button>
             </div>
             <div className="flex w-full  justify-end space-x-52">
-              <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
+              <select
+                value={pop.QTY}
+                onChange={(e) => handleQuantityChange(pop, e.target.value)}
+              >
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((quantity) => (
+                  <option key={quantity} value={quantity}>
+                    {quantity}
+                  </option>
+                ))}
               </select>
-              <h3 className="font-sans_Regular text-lg ">${pop.price}.00</h3>
+
+              <h3 className="font-sans_Regular text-lg ">
+                ${pop.QTY * pop.price}.00
+              </h3>
             </div>
           </div>
         ))}

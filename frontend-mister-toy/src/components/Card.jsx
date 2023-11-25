@@ -6,6 +6,7 @@ import { updateCart } from "../store/popAction";
 
 const Card = ({ pops, startIndex, endIndex }) => {
   const [hoveredProductId, setHoveredProductId] = useState(null);
+
   const dispatch = useDispatch();
   const handleMouseOver = (popId) => {
     setHoveredProductId(popId);
@@ -23,6 +24,18 @@ const Card = ({ pops, startIndex, endIndex }) => {
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
     existingCartItems.push(updatedPop);
     localStorage.setItem("cart", JSON.stringify(existingCartItems));
+  };
+
+  const handleQuantityChange = (pop, quantity) => {
+    const updatedPop = { ...pop, QTY: quantity };
+    dispatch(updateCart(updatedPop));
+    console.log(updatedPop.QTY);
+
+    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const updatedCart = existingCartItems.map((item) =>
+      item.id === pop.id ? { ...item, QTY: quantity } : item
+    );
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
   if (!pops) return <h1>loading</h1>;
@@ -57,17 +70,16 @@ const Card = ({ pops, startIndex, endIndex }) => {
           </div>
           {pop.inCart === "true" ? (
             <div className=" absolute">
-              <select className=" top-[403px] left-8 relative rounded-full w-14 text-center cursor-pointer">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
+              <select
+                value={pop.QTY}
+                className="top-[403px] left-8 relative rounded-full w-14 text-center cursor-pointer"
+                onChange={(e) => handleQuantityChange(pop, e.target.value)}
+              >
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((quantity) => (
+                  <option key={quantity} value={quantity}>
+                    {quantity}
+                  </option>
+                ))}
               </select>
             </div>
           ) : (

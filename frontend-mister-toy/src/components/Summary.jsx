@@ -3,7 +3,7 @@ import Button from "../assets/styles/Button";
 function Summary({ pops }) {
   const shipping = 0;
 
-  const subtotal = pops.reduce((acc, pop) => acc + pop.price, 0);
+  const subtotal = pops.reduce((acc, pop) => acc + pop.price * pop.QTY, 0);
   const totalPrice = subtotal + shipping * pops.length;
 
   return (
