@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import { useEffect, useState } from "react";
 import { fetchSlides } from "../store/slideSlice";
 import ImageSlider from "../components/ImageSlider";
-import { fetchPops, updateCart } from "../store/popAction";
+import { fetchPops } from "../store/popAction";
 import rightArrow from "../assets/images/angle-right.svg";
 import leftArrow from "../assets/images/angle-left.svg";
 

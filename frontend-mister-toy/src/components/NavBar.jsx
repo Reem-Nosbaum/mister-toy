@@ -5,8 +5,22 @@ import heart from "../assets/images/wishlist.svg";
 import user from "../assets/images/user.svg";
 import cart from "../assets/images/bag.svg";
 import { DropDownMenu } from "./dropDownMenu";
+import { useSelector } from "react-redux";
 
 function NavBar() {
+  const pops = useSelector((state) => state.pop.pops);
+  const popsInCart = pops.filter((pop) => pop.inCart === "true");
+
+  let totalItemsInCart = 0;
+
+  popsInCart.forEach((pop) => {
+    const quantity = pop.QTY;
+
+    totalItemsInCart += Number(quantity);
+  });
+
+  console.log(totalItemsInCart);
+
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [isFandomsDropDownVisible, setIsFandomsDropDownVisible] =
     useState(false);
@@ -46,6 +60,7 @@ function NavBar() {
             </div>
           </div>
         </div>
+
         <div className="flex items-center gap-7">
           <input
             type="search"
@@ -60,14 +75,22 @@ function NavBar() {
               fontFamily: "sans-serif",
             }}
           />
+
           <Link to="/wishlist" className="">
             <img src={heart} alt="heart" style={{ width: "40px" }} />
           </Link>
           <Link to="/login" className="">
             <img src={user} alt="user" style={{ width: "30px" }} />
           </Link>
+          <div
+            className={`absolute top-[30px] ${
+              totalItemsInCart < 10 ? "right-[82px]" : "right-[77px]"
+            } text-white`}
+          >
+            {totalItemsInCart}
+          </div>
           <Link to="/cart" className="">
-            <img src={cart} alt="cart" style={{ width: "40px" }} />
+            <img src={cart} alt="cart" style={{ width: "45px" }} />
           </Link>
         </div>
       </nav>

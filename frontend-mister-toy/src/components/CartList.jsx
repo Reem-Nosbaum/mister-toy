@@ -12,7 +12,7 @@ function CartList({ pops }) {
 
     localStorage.setItem("cart", JSON.stringify(updatedCart));
 
-    const removePop = { ...pop, inCart: false };
+    const removePop = { ...pop, inCart: false, QTY: 1 };
     dispatch(removeCart(removePop));
   };
 

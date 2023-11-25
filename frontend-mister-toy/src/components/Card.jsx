@@ -63,7 +63,11 @@ const Card = ({ pops, startIndex, endIndex }) => {
           <h3 className="  text-lg pl-3">${pop.price}.00</h3>
           <div className="flex items-center flex-col pb-3 pt-7">
             <Button
-              text={pop.inCart === "false" ? "ADD TO CART" : "IN CART"}
+              text={
+                pop.inCart === "false" || pop.inCart === false
+                  ? "ADD TO CART"
+                  : "IN CART"
+              }
               onClick={() => handleAddToCart(pop)}
               inCart={pop.inCart}
             />
