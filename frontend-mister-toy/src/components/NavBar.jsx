@@ -76,20 +76,20 @@ function NavBar() {
             }}
           />
 
-          <Link to="/wishlist" className="">
+          {/* <Link to="/wishlist" className="">
             <img src={heart} alt="heart" style={{ width: "40px" }} />
-          </Link>
+          </Link> */}
           <Link to="/login" className="">
             <img src={user} alt="user" style={{ width: "30px" }} />
           </Link>
-          <div
-            className={`absolute top-[30px] ${
-              totalItemsInCart < 10 ? "right-[82px]" : "right-[77px]"
-            } text-white`}
-          >
-            {totalItemsInCart}
-          </div>
           <Link to="/cart" className="">
+            <div
+              className={`absolute top-[30px] ${
+                totalItemsInCart < 10 ? "right-[82px]" : "right-[77px]"
+              } text-white`}
+            >
+              {totalItemsInCart}
+            </div>
             <img src={cart} alt="cart" style={{ width: "45px" }} />
           </Link>
         </div>

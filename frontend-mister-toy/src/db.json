@@ -9,8 +9,8 @@
       "details": "Level up your Dragon Ball Z collection with this Pop! of Super Saiyan Goku. Collectible stands 3.75-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw5a1ded10/images/funko/3807-1.png?sw=346&sh=346",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw0d416594/images/funko/3807-2.png?sw=346&sh=346",
-      "inCart": "true",
-      "QTY": "10"
+      "inCart": false,
+      "QTY": 1
     },
     {
       "id": 2,
@@ -21,8 +21,8 @@
       "details": "Goku and Vegeta have successfully fused, creating the most powerful warrior, in order to protect Earth and your Dragon Ball Z collection from attackers. Collect Pop! Vegito to save your set from destruction. Vinyl figure is approximately 4.5-inches tall",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw9a5fce97/images/funko/48662-1.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwde0a7c46/images/funko/48662-2.png?sw=800&sh=800",
-      "inCart": "true",
-      "QTY": "10"
+      "inCart": false,
+      "QTY": 1
     },
     {
       "id": 3,
@@ -69,7 +69,7 @@
       "details": "Relentless, volatile, and irrational, Super Buu with Ghost will do whatever necessary, even destroying himself, to destroy Earth. Pit Goku and the Dragon Team against Pop! Super Buu with Ghost in your Dragon Ball Z collection. There’s a 1 in 6 chance you may find the glow-in-the-dark chase of Pop! Super Buu with Ghost. Vinyl figure is approximately 4.25-inches tall. ",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwe1621079/images/funko/upload/71556_POPAnimation_DBZ_Buu_wGhost_wCH_GLAM-WEB%20-%20Copy.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw87995499/images/funko/upload/71556_POPAnimation_DBZ_Buu_wGhost_wCH_CH_GLAM-1-WEB.png?sw=800&sh=800",
-      "inCart": "false",
+      "inCart": false,
       "QTY": 1
     },
     {
@@ -177,7 +177,7 @@
       "details": "Blast off on a galactic adventure with Monica Rambeau as Pop! Photon as she masters her newfound powers and reunites with Carol Danvers. Complete your Marvel Studios’ The Marvels collection with this exclusive, glow-in-the-dark hero! Vinyl bobblehead is approximately 4.8-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwf4dd2e34/images/funko/upload/68286_POPVinyl_Marvels_POP5_GLAM-1-WEB.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwf299aa0a/images/funko/upload/68286_POPVinyl_Marvels_POP5_GLAM-1-D-1-WEB.png?sw=800&sh=800",
-      "inCart": "false",
+      "inCart": false,
       "QTY": 1
     },
     {
@@ -225,7 +225,7 @@
       "details": "Blast off on a galactic adventure with Pop! Nick Fury with Flerkitten as he works to defend the universe against evil. Complete your Marvel Studios’ The Marvels collection with this tactical hero! Vinyl bobblehead is approximately 3.75-inches tall.",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw24375fb0/images/funko/upload/67640_Marvels_POP8_GLAM-1-WEB.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw96f081ad/images/funko/upload/67640_Marvels_POP8_GLAM-1-1-WEB.png?sw=800&sh=800",
-      "inCart": "false",
+      "inCart": false,
       "QTY": 1
     }
   ],
