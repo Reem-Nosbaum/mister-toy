@@ -11,7 +11,6 @@ export const fetchPops = () => async (dispatch) => {
     dispatch(popsLoading());
     const data = await popService.getPops();
     dispatch(popsSuccess(data));
-    console.log("API response:", data);
   } catch (error) {
     dispatch(popsError(error.message));
   }

@@ -12,7 +12,7 @@ export const popSlice = createSlice({
   reducers: {
     popsSuccess: (state, action) => {
       state.pops = action.payload;
-      console.log(action.payload);
+
       state.loading = false;
       state.error = null;
     },

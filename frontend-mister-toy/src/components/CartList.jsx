@@ -19,7 +19,6 @@ function CartList({ pops }) {
   const handleQuantityChange = (pop, quantity) => {
     const updatedPop = { ...pop, QTY: quantity };
     dispatch(updateCart(updatedPop));
-    console.log(updatedPop.QTY);
 
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
     const updatedCart = existingCartItems.map((item) =>

@@ -19,8 +19,6 @@ function NavBar() {
     totalItemsInCart += Number(quantity);
   });
 
-  console.log(totalItemsInCart);
-
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [isFandomsDropDownVisible, setIsFandomsDropDownVisible] =
     useState(false);

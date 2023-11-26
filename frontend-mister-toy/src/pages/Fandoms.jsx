@@ -26,7 +26,6 @@ function Fandoms() {
     setIsPriceVisible(false);
   };
 
-  console.log(pops);
   return (
     <div>
       <h1 className="text-6xl pt-2 pl-3 pb-3">Fandoms</h1>
@@ -56,6 +55,18 @@ function Fandoms() {
                 onClick={() => handleCategoryChange("DRAGON BALL Z")}
               >
                 DRAGON BALL Z
+              </li>{" "}
+              <li
+                className="hover:bg-stone-400 cursor-pointer"
+                onClick={() => handleCategoryChange("INDIANA JONES")}
+              >
+                INDIANA JONES
+              </li>{" "}
+              <li
+                className="hover:bg-stone-400 cursor-pointer"
+                onClick={() => handleCategoryChange("POWER RANGERS")}
+              >
+                POWER RANGERS
               </li>
             </>
           )}
@@ -102,7 +113,7 @@ function Fandoms() {
               return 0;
             })}
           startIndex={0}
-          endIndex={20}
+          endIndex={30}
         />
       </div>
     </div>

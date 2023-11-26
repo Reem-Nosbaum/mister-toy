@@ -1,10 +1,12 @@
 import Button from "../assets/styles/Button";
 
 function Summary({ pops }) {
-  const shipping = 0;
+  let shipping = 0;
 
   const subtotal = pops.reduce((acc, pop) => acc + pop.price * pop.QTY, 0);
-  const totalPrice = subtotal + shipping * pops.length;
+  let totalPrice = subtotal * pops.length;
+  if (totalPrice < 30) shipping += 17;
+  totalPrice = subtotal + shipping * pops.length;
 
   return (
     <div className="w-[500px] h-full bg-stone-200 rounded-lg ml-52">
@@ -25,9 +27,7 @@ function Summary({ pops }) {
       </div>
       <div className="flex justify-between">
         <h1 className="text-xl pl-3 pt-3 font-sans_Regular">SHIPPING</h1>
-        <h1 className="font-sans_Regular text-lg pr-3 pt-3">
-          ${totalPrice > 30 ? shipping : shipping + 17}.00
-        </h1>
+        <h1 className="font-sans_Regular text-lg pr-3 pt-3">${shipping}.00</h1>
       </div>
       <div className="flex pl-3 ">
         <h3 className="font-sans_Regular text-red-600 text-lg">

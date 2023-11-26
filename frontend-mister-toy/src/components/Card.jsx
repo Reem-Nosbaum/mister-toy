@@ -19,7 +19,6 @@ const Card = ({ pops, startIndex, endIndex }) => {
   const handleAddToCart = (pop) => {
     const updatedPop = { ...pop, inCart: "true" };
     dispatch(updateCart(updatedPop));
-    console.log(updatedPop.inCart);
 
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
     existingCartItems.push(updatedPop);
@@ -29,7 +28,6 @@ const Card = ({ pops, startIndex, endIndex }) => {
   const handleQuantityChange = (pop, quantity) => {
     const updatedPop = { ...pop, QTY: quantity };
     dispatch(updateCart(updatedPop));
-    console.log(updatedPop.QTY);
 
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
     const updatedCart = existingCartItems.map((item) =>
