@@ -7,6 +7,15 @@ import { fetchPops } from "../store/popAction";
 import rightArrow from "../assets/images/angle-right.svg";
 import leftArrow from "../assets/images/angle-left.svg";
 
+const shuffleArray = (array) => {
+  let shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+};
+
 function Home() {
   const dispatch = useDispatch();
   const pops = useSelector((state) => state.pop.pops);
@@ -53,7 +62,7 @@ function Home() {
             </button>
           )}
           <Card
-            pops={pops}
+            pops={shuffleArray(pops).slice(0, 50)}
             startIndex={currentIndex}
             endIndex={currentIndex + 5}
           />

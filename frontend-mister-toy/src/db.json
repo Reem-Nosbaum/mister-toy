@@ -21,7 +21,7 @@
       "details": "Goku and Vegeta have successfully fused, creating the most powerful warrior, in order to protect Earth and your Dragon Ball Z collection from attackers. Collect Pop! Vegito to save your set from destruction. Vinyl figure is approximately 4.5-inches tall",
       "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw9a5fce97/images/funko/48662-1.png?sw=800&sh=800",
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwde0a7c46/images/funko/48662-2.png?sw=800&sh=800",
-      "inCart": false,
+      "inCart": "true",
       "QTY": 1
     },
     {
@@ -606,7 +606,10 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwde2f575b/images/funko/page-designer/category/Feature-GiftGuide-StockingStuffers-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw017b1510/images/funko/page-designer/hero/Feature-v2GiftGuide-StockingStuffers-Product.png",
       "title": "STOCKING STUFFERS",
-      "secondaryTitle": ["FIRESIDE FAVORITES", "FOR THE HOLIDAYS"],
+      "secondaryTitle": [
+        "FIRESIDE FAVORITES",
+        "FOR THE HOLIDAYS"
+      ],
       "paragraph": [
         "Make a Big Impact With Little Stocking Stuffer Gifts From Funko.",
         "Shop Stocking Stuffers in Time for the Holidays."
@@ -616,7 +619,10 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw6ed91ae7/images/funko/page-designer/category/Feature-BlackFriday-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw22f392a3/images/funko/page-designer/hero/Feature-BlackFriday-Product.png",
       "title": "READY, SET, SHOP",
-      "secondaryTitle": ["BLACK FRIDAY STARTS", "HERE"],
+      "secondaryTitle": [
+        "BLACK FRIDAY STARTS",
+        "HERE"
+      ],
       "paragraph": [
         "Save Up to 50% on Gifts and Collectibles! Our Black Friday Sale Starts",
         "Now Through 11/26. Exclusions Apply."
@@ -626,7 +632,9 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw030cd8fc/images/funko/page-designer/category/Feature-JayAndSilentBob-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw8df10e86/images/funko/page-designer/hero/Feature-JayAndSilentBob-Product.png",
       "title": "THIRD SHIFT",
-      "secondaryTitle": ["BROWSE THE AISLES"],
+      "secondaryTitle": [
+        "BROWSE THE AISLES"
+      ],
       "paragraph": [
         "Make a Quick Stop to Pick Up New Clerks III Pops! Expand Your Pop!",
         "Set."

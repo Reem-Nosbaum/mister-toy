@@ -52,7 +52,8 @@ const Card = ({ pops, startIndex, endIndex }) => {
             onMouseOut={handleMouseOut}
           />
           <h3 className="font-sans text-sm pl-3 pt-4">{pop.category}</h3>
-          <h1 className="ml-3 mr-3 overflow-hidden whitespace-no-wrap truncate font-semibold">
+          <h1 className="ml-3 mr-3 overflow-hidden whitespace-no-wrap truncate font-semibold"
+          onClick={}>
             {pop.type}
           </h1>
           <br />

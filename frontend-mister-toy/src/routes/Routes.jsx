@@ -6,6 +6,7 @@ import Fandoms from "../pages/Fandoms";
 import Category from "../pages/Category";
 import Wishlist from "../pages/Wishlist";
 import Cart from "../pages/Cart";
+import PopPreview from "../pages/PopPreview";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/pop-preview:id",
+        element: <PopPreview />,
       },
       {
         path: "/fandoms",

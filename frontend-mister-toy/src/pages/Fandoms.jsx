@@ -15,7 +15,6 @@ const shuffleArray = (array) => {
 
 function Fandoms() {
   const location = useLocation();
-  const [Category, setCategory] = useState("");
 
   const pops = useSelector((state) => state.pop.pops);
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -46,7 +45,7 @@ function Fandoms() {
 
   return (
     <div>
-      <h1 className="text-6xl pt-2 pl-3 pb-3">Fandoms</h1>
+      <h1 className="text-6xl pt-2 pl-3 pb-3 font-sans">Fandoms</h1>
       {selectedCategory !== "shop-all" && (
         <>
           <div className="relative z-10 text-lg">

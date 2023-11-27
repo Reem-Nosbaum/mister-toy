@@ -36,7 +36,7 @@ function Category() {
 
   return (
     <div>
-      <h1 className="text-6xl pt-2 pl-3 pb-3">Category</h1>
+      <h1 className="text-6xl pt-2 pl-3 pb-3 font-sans">Category</h1>
       {selectedCategory !== "apparel" && (
         <>
           <div className="relative z-10 text-lg ">

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/images/site-logo.svg";
-import heart from "../assets/images/wishlist.svg";
 import user from "../assets/images/user.svg";
 import cart from "../assets/images/bag.svg";
 import { DropDownMenu } from "./dropDownMenu";
@@ -10,6 +9,7 @@ import { useSelector } from "react-redux";
 function NavBar() {
   const pops = useSelector((state) => state.pop.pops);
   const popsInCart = pops.filter((pop) => pop.inCart === "true");
+  const [searchQuery, setSearchQuery] = useState("");
 
   let totalItemsInCart = 0;
 
@@ -25,6 +25,7 @@ function NavBar() {
   const [isCategoryDropDownVisible, setIsCategoryDropDownVisible] =
     useState(false);
 
+  console.log(searchQuery);
   return (
     <>
       <nav className="bg-stone-900 text-white font-sans flex justify-between w-full pr-16 pl-16  z-20">
@@ -68,6 +69,7 @@ function NavBar() {
             placeholder={"SEARCH"}
             onFocus={() => setIsSearchFocused(true)}
             onBlur={() => setIsSearchFocused(false)}
+            defaultValue={searchQuery}
             style={{
               paddingLeft: "1rem",
               fontFamily: "sans-serif",
