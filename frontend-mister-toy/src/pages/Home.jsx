@@ -42,7 +42,7 @@ function Home() {
   return (
     <div>
       <ImageSlider slides={slides} />
-      <h1 className="text-6xl items-center justify-center flex pt-3">
+      <h1 className="text-6xl items-center justify-center flex pt-3 font-sans">
         NEW PICKS FOR YOU!
       </h1>
       <div className="flex justify-center h-[500px]">

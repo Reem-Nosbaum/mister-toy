@@ -8,7 +8,7 @@ import Twiter from "../assets/styles/Twiter";
 
 function Footer() {
   return (
-    <div className="text-white sans-serif relative">
+    <div className="text-white font-sans relative">
       <div className="relative">
         <h1 className="absolute top-16 left-10 text-4xl ">
           JOIN OUR FAN REWARDS PROGRAM

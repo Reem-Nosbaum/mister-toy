@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Proxima Nova"'],
-        sans_Regular: [" ProximaNova-Regular"],
+        sans: ["Proxima Nova"],
+        sans_Regular: ["ProximaNova-Regular"],
       },
     },
   },

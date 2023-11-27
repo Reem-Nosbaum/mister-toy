@@ -527,6 +527,78 @@
       "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwd12d4c4f/images/funko/upload/IJBK0001_FUNKO-POP-MINI-BKPK--INDIANA-JONES-RAIDERS-AOP_GLAM-3-WEB.png?sw=800&sh=800",
       "inCart": false,
       "QTY": 1
+    },
+    {
+      "id": 46,
+      "category": "MARVEL",
+      "productType": "Apparel",
+      "type": "SPIDER-MAN: MILES MORALES BOXED TEE",
+      "price": 20,
+      "details": "We are not able to exchange sizes or offer replacements for apparel that was sent in the size ordered.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw3a6a3b7c/images/funko/66111-1_C.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwd6e00439/images/funko/66111-2_C.png?sw=800&sh=800",
+      "inCart": false,
+      "QTY": 1
+    },
+    {
+      "id": 47,
+      "category": "MARVEL",
+      "productType": "Apparel",
+      "type": "THOR AND MIGHTY THOR BOXED TEE",
+      "price": 20,
+      "details": "We are not able to exchange sizes or offer replacements for apparel that was sent in the size ordered.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwd9a8dd17/images/funko/63347-1_C.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw55b6bd6b/images/funko/63347-2_C.png?sw=800&sh=800",
+      "inCart": false,
+      "QTY": 1
+    },
+    {
+      "id": 48,
+      "category": "NARUTO SHIPPUDEN",
+      "productType": "Apparel",
+      "type": "NARUTO VS PAIN BOXED TEE",
+      "price": 20,
+      "details": "We are not able to exchange sizes or offer replacements for apparel that was sent in the size ordered.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwb0726670/images/funko/upload/72879_NARUTO_VS_PAIN_WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwbc50301d/images/funko/upload/72879_NARUTO_VS_PAIN_BOX_WEB.png?sw=800&sh=800",
+      "inCart": false,
+      "QTY": 1
+    },
+    {
+      "id": 49,
+      "category": "NARUTO SHIPPUDEN",
+      "productType": "Apparel",
+      "type": "MIGHT GUY EIGHT GATES BOXED TEE",
+      "price": 20,
+      "details": "We are not able to exchange sizes or offer replacements for apparel that was sent in the size ordered.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw2497e7f2/images/funko/66658-1_C.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw9a753a62/images/funko/66658-2_C.png?sw=800&sh=800",
+      "inCart": false,
+      "QTY": 1
+    },
+    {
+      "id": 50,
+      "category": "DRAGON BALL Z",
+      "productType": "Apparel",
+      "type": "GOKU KAMEHAMEHA BOXED TEE",
+      "price": 20,
+      "details": "We are not able to exchange sizes or offer replacements for apparel that was sent in the size ordered.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw59e64acf/images/funko/upload/72771_GOKU_KAMEHAMEHA_WEB.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw754e19fa/images/funko/upload/72771_GOKU_KAMEHAMEHA_BOX_WEB.png?sw=800&sh=800",
+      "inCart": false,
+      "QTY": 1
+    },
+    {
+      "id": 51,
+      "category": "DRAGON BALL Z",
+      "productType": "Apparel",
+      "type": "TRUNKS BOXED TEE",
+      "price": 20,
+      "details": "We are not able to exchange sizes or offer replacements for apparel that was sent in the size ordered.",
+      "image1": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw372fda77/images/funko/65427-1_C.png?sw=800&sh=800",
+      "image2": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw5dadc32a/images/funko/65427-2_C.png?sw=800&sh=800",
+      "inCart": false,
+      "QTY": 1
     }
   ],
   "slides": [
@@ -534,10 +606,7 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwde2f575b/images/funko/page-designer/category/Feature-GiftGuide-StockingStuffers-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw017b1510/images/funko/page-designer/hero/Feature-v2GiftGuide-StockingStuffers-Product.png",
       "title": "STOCKING STUFFERS",
-      "secondaryTitle": [
-        "FIRESIDE FAVORITES",
-        "FOR THE HOLIDAYS"
-      ],
+      "secondaryTitle": ["FIRESIDE FAVORITES", "FOR THE HOLIDAYS"],
       "paragraph": [
         "Make a Big Impact With Little Stocking Stuffer Gifts From Funko.",
         "Shop Stocking Stuffers in Time for the Holidays."
@@ -547,10 +616,7 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw6ed91ae7/images/funko/page-designer/category/Feature-BlackFriday-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw22f392a3/images/funko/page-designer/hero/Feature-BlackFriday-Product.png",
       "title": "READY, SET, SHOP",
-      "secondaryTitle": [
-        "BLACK FRIDAY STARTS",
-        "HERE"
-      ],
+      "secondaryTitle": ["BLACK FRIDAY STARTS", "HERE"],
       "paragraph": [
         "Save Up to 50% on Gifts and Collectibles! Our Black Friday Sale Starts",
         "Now Through 11/26. Exclusions Apply."
@@ -560,9 +626,7 @@
       "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw030cd8fc/images/funko/page-designer/category/Feature-JayAndSilentBob-Background.jpg",
       "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw8df10e86/images/funko/page-designer/hero/Feature-JayAndSilentBob-Product.png",
       "title": "THIRD SHIFT",
-      "secondaryTitle": [
-        "BROWSE THE AISLES"
-      ],
+      "secondaryTitle": ["BROWSE THE AISLES"],
       "paragraph": [
         "Make a Quick Stop to Pick Up New Clerks III Pops! Expand Your Pop!",
         "Set."

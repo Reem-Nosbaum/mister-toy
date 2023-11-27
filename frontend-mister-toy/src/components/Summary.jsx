@@ -9,7 +9,7 @@ function Summary({ pops }) {
   totalPrice = subtotal + shipping * pops.length;
 
   return (
-    <div className="w-[500px] h-full bg-stone-200 rounded-lg ml-52">
+    <div className="w-[500px] h-full bg-stone-200 rounded-lg ml-52 font-sans">
       <div className="border-b border-stone-500 flex justify-between ">
         <h1 className="text-2xl pl-3 pt-3">SUMMARY</h1>
         <h1 className="font-sans_Regular text-lg pr-3 pt-3">

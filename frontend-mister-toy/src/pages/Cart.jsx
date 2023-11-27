@@ -14,7 +14,7 @@ function Cart() {
   }, [dispatch]);
 
   return (
-    <div className="">
+    <div className="font-sans">
       <div className=" text-4xl pb-10  pt-8 pl-7">MY CART</div>
       <div className="flex w-full h-full ">
         <CartList pops={pops.filter((pop) => pop.inCart === "true")} />

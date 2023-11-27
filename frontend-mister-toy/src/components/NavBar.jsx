@@ -27,7 +27,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="bg-stone-900 text-white sans-serif flex justify-between w-full pr-16 pl-16  z-20">
+      <nav className="bg-stone-900 text-white font-sans flex justify-between w-full pr-16 pl-16  z-20">
         <div className="flex items-center ">
           <Link to="/">
             <img src={logo} alt="logo" style={{ width: "100px" }} />

@@ -76,10 +76,13 @@ const ImageSlider = ({ slides }) => {
         src={slides[currentIndex].popImg}
         alt="pop"
       />
-      <div className="absolute top-52 left-14 text-stone-50 ">
+      <div className="absolute top-52 left-14 text-stone-50 font-sans  ">
         <h1 className="relative bottom-6">{slides[currentIndex].title}</h1>
         {slides[currentIndex].secondaryTitle.map((text, index) => (
-          <h2 className="text-6xl relative bottom-4" key={index}>
+          <h2
+            className="text-6xl relative bottom-4  font-semibold font-sans"
+            key={index}
+          >
             {text}
           </h2>
         ))}
