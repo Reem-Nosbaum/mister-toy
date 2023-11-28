@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/images/site-logo.svg";
 import user from "../assets/images/user.svg";
@@ -9,7 +9,23 @@ import { useSelector } from "react-redux";
 function NavBar() {
   const pops = useSelector((state) => state.pop.pops);
   const popsInCart = pops.filter((pop) => pop.inCart === "true");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isFandomsDropDownVisible, setIsFandomsDropDownVisible] =
+    useState(false);
+  const [isCategoryDropDownVisible, setIsCategoryDropDownVisible] =
+    useState(false);
+
+  const filteredPops = pops.filter(
+    (pop) =>
+      pop.type.toLowerCase().includes(search.trim().toLowerCase()) ||
+      pop.category.toLowerCase().includes(search.trim().toLowerCase())
+  );
+
+  const handelPopClick = (pop) => {
+    navigate(`/pop-preview/${pop.id}`);
+  };
 
   let totalItemsInCart = 0;
 
@@ -19,13 +35,6 @@ function NavBar() {
     totalItemsInCart += Number(quantity);
   });
 
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [isFandomsDropDownVisible, setIsFandomsDropDownVisible] =
-    useState(false);
-  const [isCategoryDropDownVisible, setIsCategoryDropDownVisible] =
-    useState(false);
-
-  console.log(searchQuery);
   return (
     <>
       <nav className="bg-stone-900 text-white font-sans flex justify-between w-full pr-16 pl-16  z-20">
@@ -69,17 +78,46 @@ function NavBar() {
             placeholder={"SEARCH"}
             onFocus={() => setIsSearchFocused(true)}
             onBlur={() => setIsSearchFocused(false)}
-            defaultValue={searchQuery}
+            onChange={(e) => setSearch(e.target.value)}
             style={{
               paddingLeft: "1rem",
               fontFamily: "sans-serif",
             }}
           />
+          <div
+            className={`w-64 h-[500px] bg-stone-200 top-16 absolute rounded-md  overflow-scroll scroll-smooths ${
+              isSearchFocused ? "block" : " hidden"
+            }`}
+          >
+            <h1 className="text-xl font-sans border-b text-stone-950 pl-4 border-stone-950">
+              PRODUCTS
+            </h1>
+            <div>
+              {filteredPops.map((filteredPop) => (
+                <div
+                  className="pb-4 pt-2 flex items-center border-b border-stone-950 cursor-pointer  "
+                  key={filteredPop.id}
+                  onClick={() => handelPopClick(filteredPop)}
+                >
+                  <img
+                    className="w-20 h-20 hover:scale-110"
+                    src={filteredPop.image1}
+                    alt={filteredPop.category}
+                  />
+                  <div>
+                    <h2 className="text-stone-950 font-sans_Regular text-sm">
+                      {filteredPop.category}
+                    </h2>
+                    <h2 className="text-stone-950 font-sans text-lg">
+                      {filteredPop.type}
+                    </h2>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-          {/* <Link to="/wishlist" className="">
-            <img src={heart} alt="heart" style={{ width: "40px" }} />
-          </Link> */}
-          <Link to="/login" className="">
+          <Link to="/login">
             <img src={user} alt="user" style={{ width: "30px" }} />
           </Link>
           <Link to="/cart" className="">
