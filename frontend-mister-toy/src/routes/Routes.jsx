@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/pop-preview:id",
+        path: "/pop-preview/:id",
         element: <PopPreview />,
       },
       {

@@ -3,10 +3,12 @@ import Button from "../assets/styles/Button";
 
 import { useDispatch } from "react-redux";
 import { updateCart } from "../store/popAction";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ pops, startIndex, endIndex }) => {
   const [hoveredProductId, setHoveredProductId] = useState(null);
 
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleMouseOver = (popId) => {
     setHoveredProductId(popId);
@@ -14,6 +16,10 @@ const Card = ({ pops, startIndex, endIndex }) => {
 
   const handleMouseOut = () => {
     setHoveredProductId(null);
+  };
+
+  const handelPopClick = (pop) => {
+    navigate(`/pop-preview/${pop.id}`);
   };
 
   const handleAddToCart = (pop) => {
@@ -41,8 +47,9 @@ const Card = ({ pops, startIndex, endIndex }) => {
     <div className="flex flex-wrap items-center gap-3 justify-center">
       {pops.slice(startIndex, endIndex).map((pop) => (
         <div
+          onClick={() => handelPopClick(pop)}
           key={pop.id}
-          className="text-black w-72 border-stone-100 border-4 rounded-xl flex flex-col bg-white mb-4"
+          className="text-black w-72 border-stone-100 border-4 rounded-xl flex flex-col bg-white mb-4 cursor-pointer"
         >
           <img
             src={hoveredProductId === pop.id ? pop.image2 : pop.image1}
@@ -52,8 +59,7 @@ const Card = ({ pops, startIndex, endIndex }) => {
             onMouseOut={handleMouseOut}
           />
           <h3 className="font-sans text-sm pl-3 pt-4">{pop.category}</h3>
-          <h1 className="ml-3 mr-3 overflow-hidden whitespace-no-wrap truncate font-semibold"
-          onClick={}>
+          <h1 className="ml-3 mr-3 overflow-hidden whitespace-no-wrap truncate font-semibold">
             {pop.type}
           </h1>
           <br />
