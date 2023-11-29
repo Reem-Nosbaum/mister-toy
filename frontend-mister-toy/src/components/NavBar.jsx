@@ -24,6 +24,7 @@ function NavBar() {
   );
 
   const handelPopClick = (pop) => {
+    console.log("clicked");
     navigate(`/pop-preview/${pop.id}`);
   };
 
@@ -34,7 +35,11 @@ function NavBar() {
 
     totalItemsInCart += Number(quantity);
   });
-
+  const handleSearchBlur = () => {
+    setTimeout(() => {
+      setIsSearchFocused(false);
+    }, 200);
+  };
   return (
     <>
       <nav className="bg-stone-900 text-white font-sans flex justify-between w-full pr-16 pl-16  z-20">
@@ -77,7 +82,7 @@ function NavBar() {
             }`}
             placeholder={"SEARCH"}
             onFocus={() => setIsSearchFocused(true)}
-            onBlur={() => setIsSearchFocused(false)}
+            onBlur={handleSearchBlur}
             onChange={(e) => setSearch(e.target.value)}
             style={{
               paddingLeft: "1rem",
@@ -85,7 +90,7 @@ function NavBar() {
             }}
           />
           <div
-            className={`w-64 h-[500px] bg-stone-200 top-16 absolute rounded-md  overflow-scroll scroll-smooths ${
+            className={`w-64 h-[500px] bg-stone-200 top-16 absolute rounded-md  overflow-auto		 ${
               isSearchFocused ? "block" : " hidden"
             }`}
           >
