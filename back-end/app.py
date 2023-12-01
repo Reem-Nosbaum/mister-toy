@@ -26,8 +26,7 @@ class Slide(db.Model):
     secondaryTitle2 = db.Column(db.String(50))
     paragraph1 = db.Column(db.String(200))
     paragraph2 = db.Column(db.String(200))
-
-
+    
 
 @app.route('/products', methods=['GET'])
 def get_products():
