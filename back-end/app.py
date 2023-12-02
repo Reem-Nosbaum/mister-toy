@@ -1,8 +1,15 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///products.db'  # SQLite database
+CORS(app, resources={r"/products": {"origins": "http://localhost:5173"},
+                    r"/slides": {"origins": "http://localhost:5173"}},
+     allow_headers=["Content-Type", "Authorization"],
+     supports_credentials=True,
+     methods=["GET", "POST", "PUT", "DELETE"]
+)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///products.db' 
 db = SQLAlchemy(app)
 
 class Product(db.Model):
@@ -22,11 +29,10 @@ class Slide(db.Model):
     bgImg = db.Column(db.String(200))
     popImg = db.Column(db.String(200))
     title = db.Column(db.String(50))
-    secondaryTitle1 = db.Column(db.String(50))
-    secondaryTitle2 = db.Column(db.String(50))
-    paragraph1 = db.Column(db.String(200))
-    paragraph2 = db.Column(db.String(200))
-    
+    secondaryTitle = db.Column(db.String(50))
+    paragraph = db.Column(db.String(200))
+
+
 
 @app.route('/products', methods=['GET'])
 def get_products():
@@ -45,7 +51,44 @@ def get_products():
             'inCart': product.inCart,
             'QTY': product.QTY
         })
-    return jsonify({'products': product_list})
+    return jsonify(product_list)
+
+
+@app.route('/products/<int:product_id>', methods=['GET'])
+def get_product_by_id(product_id):
+    product = Product.query.get(product_id)
+    if product:
+        return jsonify({
+            'id': product.id,
+            'category': product.category,
+            'productType': product.productType,
+            'type': product.type,
+            'price': product.price,
+            'details': product.details,
+            'image1': product.image1,
+            'image2': product.image2,
+            'inCart': product.inCart,
+            'QTY': product.QTY
+        })
+    else:
+        return jsonify({'error': 'Product not found'}), 404
+    
+
+
+@app.route('/products/<int:product_id>', methods=['PUT'])
+def update_in_cart(product_id):
+    product = Product.query.get(product_id)
+    if product:
+        data = request.get_json()
+        product.inCart = data.get('inCart', product.inCart)
+        product.QTY = data.get('QTY', product.QTY)
+
+        db.session.commit()
+        return jsonify({'message': 'Product updated successfully'})
+    else:
+        return jsonify({'error': 'Product not found'}), 404
+
+
 
 @app.route('/slides', methods=['GET'])
 def get_slides():
@@ -57,10 +100,13 @@ def get_slides():
             'bgImg': slide.bgImg,
             'popImg': slide.popImg,
             'title': slide.title,
-            'secondaryTitle': [slide.secondaryTitle1, slide.secondaryTitle2],
-            'paragraph': [slide.paragraph1, slide.paragraph2],
+            'secondaryTitle': [slide.secondaryTitle],
+            'paragraph': [slide.paragraph],
         })
-    return jsonify({'slides': slide_list})
+    return jsonify(slide_list)
+
+
+
 
 # Ensure that the application context is pushed manually
 with app.app_context():

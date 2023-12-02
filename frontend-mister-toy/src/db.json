@@ -603,41 +603,31 @@
   ],
   "slides": [
     {
-      "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwde2f575b/images/funko/page-designer/category/Feature-GiftGuide-StockingStuffers-Background.jpg",
-      "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw017b1510/images/funko/page-designer/hero/Feature-v2GiftGuide-StockingStuffers-Product.png",
+      "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw187959ab/images/funko/page-designer/category/Feature-Holiday-Background.jpg",
+      "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwca3628a5/images/funko/page-designer/hero/Feature-Holiday-Ornaments-Product.png",
       "title": "STOCKING STUFFERS",
-      "secondaryTitle": [
-        "FIRESIDE FAVORITES",
-        "FOR THE HOLIDAYS"
-      ],
+      "secondaryTitle": ["HOLLY-POP! TO IT &", "TRIM THAT TREE!"],
       "paragraph": [
-        "Make a Big Impact With Little Stocking Stuffer Gifts From Funko.",
-        "Shop Stocking Stuffers in Time for the Holidays."
+        "Take Up to 40% off Holiday Items Through 12/5. Terms and Conditions Apply."
       ]
     },
     {
-      "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw6ed91ae7/images/funko/page-designer/category/Feature-BlackFriday-Background.jpg",
-      "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw22f392a3/images/funko/page-designer/hero/Feature-BlackFriday-Product.png",
-      "title": "READY, SET, SHOP",
-      "secondaryTitle": [
-        "BLACK FRIDAY STARTS",
-        "HERE"
-      ],
+      "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwaaac85dd/images/funko/page-designer/category/Feature-Loki-Background.jpg",
+      "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dwd08c0359/images/funko/page-designer/hero/Feature-Loki-Product-72172.png",
+      "title": "TIME’S UP",
+      "secondaryTitle": ["THE HANDS OF TIME"],
       "paragraph": [
-        "Save Up to 50% on Gifts and Collectibles! Our Black Friday Sale Starts",
-        "Now Through 11/26. Exclusions Apply."
+        "Unravel the Mysteries of Marvel Studios’ Loki with New Collectibles from Season 2."
       ]
     },
     {
-      "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw030cd8fc/images/funko/page-designer/category/Feature-JayAndSilentBob-Background.jpg",
-      "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw8df10e86/images/funko/page-designer/hero/Feature-JayAndSilentBob-Product.png",
-      "title": "THIRD SHIFT",
-      "secondaryTitle": [
-        "BROWSE THE AISLES"
-      ],
+      "bgImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw084a7ad1/images/funko/page-designer/category/Feature-MandoS9-Background.jpg",
+      "popImg": "https://funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/dw90f1d190/images/funko/page-designer/hero/Feature-MandoS9-Product-76549.png",
+      "title": "THE MANDALORIAN™",
+      "secondaryTitle": ["CHART YOUR NEXT", "CHART YOUR NEXT"],
       "paragraph": [
-        "Make a Quick Stop to Pick Up New Clerks III Pops! Expand Your Pop!",
-        "Set."
+        "Explore a Galaxy of STAR WARS™ Collectibles with Pop! The",
+        "Mandalorian at Your Side! "
       ]
     }
   ]

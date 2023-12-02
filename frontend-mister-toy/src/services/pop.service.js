@@ -1,4 +1,4 @@
-const api = "http://localhost:8000";
+const api = "http://127.0.0.1:5000";
 
 export const popService = {
   getPops,
@@ -14,6 +14,7 @@ async function getPops() {
   try {
     const response = await fetch(`${api}/products`);
     const data = await response.json();
+    console.log(data);
 
     return data;
   } catch (err) {
@@ -25,7 +26,7 @@ async function getSlides() {
   try {
     const response = await fetch(`${api}/slides`);
     const data = await response.json();
-
+    console.log(data);
     return data;
   } catch (err) {
     console.error(err);
@@ -91,9 +92,7 @@ async function updateInCart(pop) {
   try {
     const response = await fetch(`${api}/products/${pop.id}`, {
       method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
+
       body: JSON.stringify({
         id: pop.id,
         category: pop.category,
