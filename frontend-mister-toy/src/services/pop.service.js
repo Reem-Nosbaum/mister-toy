@@ -12,7 +12,9 @@ export const popService = {
 
 async function getPops() {
   try {
-    const response = await fetch(`${api}/products`);
+    const response = await fetch(`${api}/products`, {
+      credentials: "include",
+    });
     const data = await response.json();
     console.log(data);
 
@@ -24,7 +26,10 @@ async function getPops() {
 
 async function getSlides() {
   try {
-    const response = await fetch(`${api}/slides`);
+    const response = await fetch(`${api}/slides`, {
+      credentials: "include",
+    });
+
     const data = await response.json();
     console.log(data);
     return data;
@@ -35,7 +40,10 @@ async function getSlides() {
 
 async function getById(popId) {
   try {
-    const response = await fetch(`${api}/products/${popId}`);
+    const response = await fetch(`${api}/products${popId}`, {
+      credentials: "include",
+    });
+
     const data = await response.json();
 
     return data;
@@ -47,6 +55,8 @@ async function getById(popId) {
 async function removePopById(popId) {
   try {
     const response = await fetch(`${api}/products/${popId}`, {
+      credentials: "include",
+
       method: "DELETE",
     });
 
@@ -66,6 +76,8 @@ async function removePopById(popId) {
 async function updatePopPrice(popId, price) {
   try {
     const response = await fetch(`${api}/products/${popId}`, {
+      credentials: "include",
+
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -87,21 +99,15 @@ async function updatePopPrice(popId, price) {
     throw error;
   }
 }
-
 async function updateInCart(pop) {
   try {
     const response = await fetch(`${api}/products/${pop.id}`, {
       method: "PUT",
-
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
       body: JSON.stringify({
-        id: pop.id,
-        category: pop.category,
-        productType: pop.productType,
-        type: pop.type,
-        price: pop.price,
-        details: pop.details,
-        image1: pop.image1,
-        image2: pop.image2,
         inCart: pop.inCart,
         QTY: pop.QTY,
       }),
@@ -133,6 +139,8 @@ async function newPop(
 ) {
   try {
     const response = await fetch(`${api}/products`, {
+      credentials: "include",
+
       method: "POST",
       headers: {
         "Content-Type": "application/json",

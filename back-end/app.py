@@ -3,13 +3,19 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-CORS(app, resources={r"/products": {"origins": "http://localhost:5173"},
-                    r"/slides": {"origins": "http://localhost:5173"}},
-     allow_headers=["Content-Type", "Authorization"],
-     supports_credentials=True,
-     methods=["GET", "POST", "PUT", "DELETE"]
+CORS(app, resources={
+    r"/products/*": {"origins": "http://localhost:5173"},
+    r"/slides/*": {"origins": "http://localhost:5173"}},
+    allow_headers=["Content-Type", "Authorization"],
+    supports_credentials=True,
+    methods=["GET", "POST", "PUT", "DELETE"]
 )
+
+
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///products.db' 
+app.config['CORS_SUPPORTS_CREDENTIALS'] = True
+
 db = SQLAlchemy(app)
 
 class Product(db.Model):
@@ -21,7 +27,7 @@ class Product(db.Model):
     details = db.Column(db.String(200))
     image1 = db.Column(db.String(200))
     image2 = db.Column(db.String(200))
-    inCart = db.Column(db.Boolean)
+    inCart = db.Column(db.Boolean, default=False)
     QTY = db.Column(db.Integer)
 
 class Slide(db.Model):
@@ -29,8 +35,11 @@ class Slide(db.Model):
     bgImg = db.Column(db.String(200))
     popImg = db.Column(db.String(200))
     title = db.Column(db.String(50))
-    secondaryTitle = db.Column(db.String(50))
-    paragraph = db.Column(db.String(200))
+    secondaryTitle0 = db.Column(db.String(255))
+    secondaryTitle1 = db.Column(db.String(255))
+    paragraph0 = db.Column(db.String(200))
+
+    paragraph1 = db.Column(db.String(200))
 
 
 
@@ -80,14 +89,18 @@ def update_in_cart(product_id):
     product = Product.query.get(product_id)
     if product:
         data = request.get_json()
-        product.inCart = data.get('inCart', product.inCart)
+
+
+        if 'inCart' in data:
+            product.inCart = bool(data['inCart'])
+        
+
         product.QTY = data.get('QTY', product.QTY)
 
         db.session.commit()
         return jsonify({'message': 'Product updated successfully'})
     else:
         return jsonify({'error': 'Product not found'}), 404
-
 
 
 @app.route('/slides', methods=['GET'])
@@ -100,8 +113,10 @@ def get_slides():
             'bgImg': slide.bgImg,
             'popImg': slide.popImg,
             'title': slide.title,
-            'secondaryTitle': [slide.secondaryTitle],
-            'paragraph': [slide.paragraph],
+            'secondaryTitle0': [slide.secondaryTitle0],
+            'secondaryTitle1': [slide.secondaryTitle1],
+            'paragraph0': [slide.paragraph0],
+            'paragraph1': [slide.paragraph1],
         })
     return jsonify(slide_list)
 
