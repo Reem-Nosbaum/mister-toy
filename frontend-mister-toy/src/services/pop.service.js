@@ -119,7 +119,6 @@ async function updateInCart(pop) {
     }
 
     const data = await response.json();
-    console.log(pop);
 
     return data;
   } catch (error) {

@@ -96,9 +96,24 @@ def update_in_cart(product_id):
             
             product.QTY = data.get('QTY', product.QTY)
 
-            db.session.add(product) 
+            db.session.add(product)
             db.session.commit()
-            return jsonify({'message': 'Product updated successfully'})
+
+
+            updated_product = {
+                'id': product.id,
+                'category': product.category,
+                'productType': product.productType,
+                'type': product.type,
+                'price': product.price,
+                'details': product.details,
+                'image1': product.image1,
+                'image2': product.image2,
+                'inCart': product.inCart,
+                'QTY': product.QTY
+            }
+
+            return jsonify({'message': 'Product updated successfully', 'product': updated_product})
         else:
             return jsonify({'error': 'Product not found'}), 404
 

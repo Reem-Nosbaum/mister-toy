@@ -33,10 +33,14 @@ export const popSlice = createSlice({
       state.loading = false;
     },
     updatePopSuccess: (state, action) => {
-      const index = state.pops.findIndex((pop) => pop.id === action.payload.id);
+      const { product } = action.payload;
+
+      const index = state.pops.findIndex((pop) => pop.id === product.id);
       if (index !== -1) {
-        state.pops[index] = action.payload;
+        state.pops[index] = product;
       }
+
+      state.pops = [...state.pops];
       state.loading = false;
     },
   },
