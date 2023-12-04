@@ -14,7 +14,7 @@ function PopPreview() {
   const [selectedImage, setSelectedImage] = useState(pop.image1);
 
   const handleAddToCart = (pop) => {
-    const updatedPop = { ...pop, inCart: "true" };
+    const updatedPop = { ...pop, inCart: true };
     dispatch(updateCart(updatedPop));
 
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];

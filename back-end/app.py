@@ -86,21 +86,21 @@ def get_product_by_id(product_id):
 
 @app.route('/products/<int:product_id>', methods=['PUT'])
 def update_in_cart(product_id):
-    product = Product.query.get(product_id)
-    if product:
-        data = request.get_json()
+    with app.app_context():
+        product = Product.query.get(product_id)
+        if product:
+            data = request.get_json()
 
+            if 'inCart' in data:
+                product.inCart = bool(data['inCart'])
+            
+            product.QTY = data.get('QTY', product.QTY)
 
-        if 'inCart' in data:
-            product.inCart = bool(data['inCart'])
-        
-
-        product.QTY = data.get('QTY', product.QTY)
-
-        db.session.commit()
-        return jsonify({'message': 'Product updated successfully'})
-    else:
-        return jsonify({'error': 'Product not found'}), 404
+            db.session.add(product) 
+            db.session.commit()
+            return jsonify({'message': 'Product updated successfully'})
+        else:
+            return jsonify({'error': 'Product not found'}), 404
 
 
 @app.route('/slides', methods=['GET'])

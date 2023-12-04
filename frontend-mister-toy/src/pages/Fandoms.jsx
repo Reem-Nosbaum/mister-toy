@@ -21,7 +21,6 @@ function Fandoms() {
   const [selectedPrice, setSelectedPrice] = useState("");
   const [isCategoryVisible, setIsCategoryVisible] = useState(false);
   const [isPriceVisible, setIsPriceVisible] = useState(false);
-
   const dispatch = useDispatch();
 
   useEffect(() => {

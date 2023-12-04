@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 
 function NavBar() {
   const pops = useSelector((state) => state.pop.pops);
-  const popsInCart = pops.filter((pop) => pop.inCart === "true");
+  const popsInCart = pops.filter((pop) => pop.inCart === true);
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -24,7 +24,6 @@ function NavBar() {
   );
 
   const handelPopClick = (pop) => {
-    console.log("clicked");
     navigate(`/pop-preview/${pop.id}`);
   };
 

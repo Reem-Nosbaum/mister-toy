@@ -16,7 +16,6 @@ async function getPops() {
       credentials: "include",
     });
     const data = await response.json();
-    console.log(data);
 
     return data;
   } catch (err) {
@@ -31,7 +30,7 @@ async function getSlides() {
     });
 
     const data = await response.json();
-    console.log(data);
+
     return data;
   } catch (err) {
     console.error(err);
@@ -120,6 +119,7 @@ async function updateInCart(pop) {
     }
 
     const data = await response.json();
+    console.log(pop);
 
     return data;
   } catch (error) {

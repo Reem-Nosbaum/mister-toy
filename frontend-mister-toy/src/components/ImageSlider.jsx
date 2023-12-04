@@ -78,18 +78,16 @@ const ImageSlider = ({ slides }) => {
       />
       <div className="absolute top-52 left-14 text-stone-50 font-sans  ">
         <h1 className="relative bottom-6">{slides[currentIndex].title}</h1>
-        {slides[currentIndex].secondaryTitle0.map((text, index) => (
-          <h2
-            className="text-6xl relative bottom-4  font-semibold font-sans"
-            key={index}
-          >
-            {text}
-          </h2>
-        ))}
 
-        {slides[currentIndex].paragraph0.map((text, index) => (
-          <h3 key={index}>{text}</h3>
-        ))}
+        <h2 className="text-6xl relative bottom-4  font-semibold font-sans">
+          {slides[currentIndex].secondaryTitle0}
+        </h2>
+        <h2 className="text-6xl relative bottom-4  font-semibold font-sans">
+          {slides[currentIndex].secondaryTitle1}
+        </h2>
+
+        <h3> {slides[currentIndex].paragraph0}</h3>
+        <h3> {slides[currentIndex].paragraph1}</h3>
       </div>
       <img
         className="w-full h-full "

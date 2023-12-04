@@ -17,8 +17,8 @@ function Cart() {
     <div className="font-sans">
       <div className=" text-4xl pb-10  pt-8 pl-7">MY CART</div>
       <div className="flex w-full h-full ">
-        <CartList pops={pops.filter((pop) => pop.inCart === "true")} />
-        <Summary pops={pops.filter((pop) => pop.inCart === "true")} />
+        <CartList pops={pops.filter((pop) => pop.inCart === true)} />
+        <Summary pops={pops.filter((pop) => pop.inCart === true)} />
       </div>
     </div>
   );
