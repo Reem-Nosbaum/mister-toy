@@ -11,9 +11,8 @@ CORS(app, resources={
     methods=["GET", "POST", "PUT", "DELETE"]
 )
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")   #'sqlite:///products.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")   
 
-# postgres://pop_store_user:37Zw46BNomWAsP0ZigXpggikYLZxx2kS@dpg-clnb0kpll56s73fet0fg-a.oregon-postgres.render.com/pop_store
 
 app.config['CORS_SUPPORTS_CREDENTIALS'] = True
 
