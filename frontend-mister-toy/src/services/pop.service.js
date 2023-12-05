@@ -1,4 +1,4 @@
-const api = "http://127.0.0.1:5000";
+const api = "https://pop-store.onrender.com";
 
 export const popService = {
   getPops,
