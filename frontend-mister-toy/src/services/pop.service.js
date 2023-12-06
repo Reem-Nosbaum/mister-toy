@@ -1,4 +1,4 @@
-const api = "https://pop-store.onrender.com";
+const api = "https://pop-service-n91j.onrender.com";
 
 export const popService = {
   getPops,
