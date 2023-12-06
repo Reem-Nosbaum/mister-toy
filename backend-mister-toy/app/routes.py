@@ -97,19 +97,37 @@ def update_in_cart(product_id):
             return jsonify({'error': 'Product not found'}), 404
 
 
-@app.route('/slides', methods=['GET'])
-def get_slides():
-    slides = Slide.query.all()
-    slide_list = []
-    for slide in slides:
-        slide_list.append({
-            'id': slide.id,
-            'bgImg': slide.bgImg,
-            'popImg': slide.popImg,
-            'title': slide.title,
-            'secondaryTitle0': [slide.secondaryTitle0],
-            'secondaryTitle1': [slide.secondaryTitle1],
-            'paragraph0': [slide.paragraph0],
-            'paragraph1': [slide.paragraph1],
-        })
-    return jsonify(slide_list)
+@app.route('/slides', methods=['GET', 'POST'])
+def manage_slides():
+    if request.method == 'GET':
+        slides = Slide.query.all()
+        slide_list = []
+        for slide in slides:
+            slide_list.append({
+                'id': slide.id,
+                'bgImg': slide.bgImg,
+                'popImg': slide.popImg,
+                'title': slide.title,
+                'secondaryTitle0': slide.secondaryTitle0,
+                'secondaryTitle1': slide.secondaryTitle1,
+                'paragraph0': slide.paragraph0,
+                'paragraph1': slide.paragraph1,
+            })
+        return jsonify(slide_list)
+
+    elif request.method == 'POST':
+        # Add a new slide
+        data = request.json
+        new_slide = Slide(
+            bgImg=data['bgImg'],
+            popImg=data['popImg'],
+            title=data['title'],
+            secondaryTitle0=data['secondaryTitle0'],
+            secondaryTitle1=data['secondaryTitle1'],
+            paragraph0=data['paragraph0'],
+            paragraph1=data['paragraph1'],
+        )
+        db.session.add(new_slide)
+        db.session.commit()
+
+        return jsonify({'message': 'Slide added successfully'}), 201
