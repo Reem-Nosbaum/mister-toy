@@ -8,7 +8,7 @@ class Product(db.Model):
     productType = db.Column(db.String(50))
     type = db.Column(db.String(50))
     price = db.Column(db.Float)
-    details = db.Column(db.String(200))
+    details = db.Column(db.String(500))
     image1 = db.Column(db.String(200))
     image2 = db.Column(db.String(200))
     inCart = db.Column(db.Boolean, default=False)
