@@ -26,4 +26,3 @@ class Slide(db.Model):
     paragraph1 = db.Column(db.String(200))
 
 
-

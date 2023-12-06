@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, request
 from models import db, Product, Slide
 
 app = Flask(__name__)
@@ -116,4 +116,3 @@ def get_slides():
             'paragraph1': [slide.paragraph1],
         })
     return jsonify(slide_list)
-
