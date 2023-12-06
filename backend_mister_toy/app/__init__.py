@@ -1,8 +1,6 @@
 from flask import Flask
+from .routes import app, db 
 import os
-from routes import app, db
-
-from models import db  
 
 def create_app():
     app = Flask(__name__)
@@ -12,6 +10,6 @@ def create_app():
 
     # Import and register your blueprints
     from routes import bp as routes_bp
-    app.register_blueprint(routes_bp)
+    app.register_blueprint(routes.app)
 
     return app
