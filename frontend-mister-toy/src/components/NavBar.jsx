@@ -121,7 +121,7 @@ function NavBar() {
             </div>
           </div>
 
-          <Link to="/login">
+          <Link to="signin">
             <img src={user} alt="user" style={{ width: "30px" }} />
           </Link>
           <Link to="/cart" className="">

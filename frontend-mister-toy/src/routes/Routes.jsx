@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import MainLayout from "./MainLayout";
-import Login from "../pages/Login";
+import SignIn from "../pages/SignIn";
 import Fandoms from "../pages/Fandoms";
 import Category from "../pages/Category";
 import Wishlist from "../pages/Wishlist";
@@ -18,8 +18,8 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/login",
-        element: <Login />,
+        path: "/signin",
+        element: <SignIn />,
       },
       {
         path: "/pop-preview/:id",
