@@ -17,7 +17,7 @@ function Footer() {
           Enroll to Get the Ultimate Fan Experience! Earn Points and Redeem for
           <br /> Exclusive Rewards.
         </h2>
-        <img src={footer} alt="footer_img" />
+        <img src={footer} alt="footer_img" className="w-full" />
       </div>
       <div className="bg-stone-950 w-full flex justify-center space-x-4 pb-3 pt-3">
         <Link>
