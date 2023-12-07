@@ -131,3 +131,56 @@ def manage_slides():
         db.session.commit()
 
         return jsonify({'message': 'Slide added successfully'}), 201
+
+
+@app.route('/slides/<int:slide_id>', methods=['GET', 'PUT'])
+def update_slide(slide_id):
+    slide = Slide.query.get(slide_id)
+    
+    if slide:
+        if request.method == 'GET':
+            # Return the details of a specific slide
+            return jsonify({
+                'id': slide.id,
+                'bgImg': slide.bgImg,
+                'popImg': slide.popImg,
+                'title': slide.title,
+                'secondaryTitle0': slide.secondaryTitle0,
+                'secondaryTitle1': slide.secondaryTitle1,
+                'paragraph0': slide.paragraph0,
+                'paragraph1': slide.paragraph1,
+            })
+        
+        elif request.method == 'PUT':
+            # Update the slide
+            data = request.json
+            
+            # Update slide properties based on the received data
+            slide.bgImg = data.get('bgImg', slide.bgImg)
+            slide.popImg = data.get('popImg', slide.popImg)
+            slide.title = data.get('title', slide.title)
+            slide.secondaryTitle0 = data.get('secondaryTitle0', slide.secondaryTitle0)
+            slide.secondaryTitle1 = data.get('secondaryTitle1', slide.secondaryTitle1)
+            slide.paragraph0 = data.get('paragraph0', slide.paragraph0)
+            slide.paragraph1 = data.get('paragraph1', slide.paragraph1)
+
+            # Commit changes to the database
+            db.session.add(slide)
+            db.session.commit()
+
+            # Return the updated slide
+            updated_slide = {
+                'id': slide.id,
+                'bgImg': slide.bgImg,
+                'popImg': slide.popImg,
+                'title': slide.title,
+                'secondaryTitle0': slide.secondaryTitle0,
+                'secondaryTitle1': slide.secondaryTitle1,
+                'paragraph0': slide.paragraph0,
+                'paragraph1': slide.paragraph1,
+            }
+
+            return jsonify({'message': 'Slide updated successfully', 'slide': updated_slide})
+
+    else:
+        return jsonify({'error': 'Slide not found'}), 404
