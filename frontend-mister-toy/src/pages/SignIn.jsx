@@ -13,7 +13,8 @@ function SignIn() {
   return (
     <div className="signin">
       Sign In
-      <GoogleButton onClick={handleGoogleSignIn} />
+      <button onClick={handleGoogleSignIn}>SiginIn</button>
+      {/* <GoogleButton onClick={handleGoogleSignIn} /> */}
     </div>
   );
 }
