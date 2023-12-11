@@ -19,7 +19,7 @@ db = SQLAlchemy(app)
 # Add Cross-Origin-Opener-Policy and Cross-Origin-Embedder-Policy headers
 @app.after_request
 def add_headers(response):
-    response.headers['Cross-Origin-Opener-Policy'] = 'same-origin'
+    response.headers['Cross-Origin-Opener-Policy'] = 'same-origin-allow-popups'
     response.headers['Cross-Origin-Embedder-Policy'] = 'require-corp'
     return response
 
