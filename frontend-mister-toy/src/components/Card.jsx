@@ -24,7 +24,7 @@ const Card = ({ pops, startIndex, endIndex }) => {
 
   const handleAddToCart = (pop) => {
     const updatedPop = { ...pop, inCart: true };
-    dispatch(updateCart(updatedPop));
+    // dispatch(updateCart(updatedPop));
 
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
     existingCartItems.push(updatedPop);
