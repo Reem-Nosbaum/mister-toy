@@ -1,8 +1,10 @@
 import { useDispatch } from "react-redux";
 import Trash from "../assets/styles/Trash";
 import { removeCart, updateCart } from "../store/popAction";
+import { useAuth } from "./useAuth";
 
 function CartList({ pops }) {
+  const { user } = useAuth();
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = (pop) => {

@@ -4,9 +4,10 @@ import MainLayout from "./MainLayout";
 import SignIn from "../pages/SignIn";
 import Fandoms from "../pages/Fandoms";
 import Category from "../pages/Category";
-import Wishlist from "../pages/Wishlist";
+
 import Cart from "../pages/Cart";
 import PopPreview from "../pages/PopPreview";
+import Protected from "../components/Protected";
 
 export const router = createBrowserRouter([
   {
@@ -53,13 +54,14 @@ export const router = createBrowserRouter([
           },
         ],
       },
-      {
-        path: "/wishlist",
-        element: <Wishlist />,
-      },
+
       {
         path: "/cart",
-        element: <Cart />,
+        element: (
+          <Protected>
+            <Cart />,
+          </Protected>
+        ),
       },
     ],
   },
