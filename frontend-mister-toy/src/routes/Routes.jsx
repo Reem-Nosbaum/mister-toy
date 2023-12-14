@@ -4,10 +4,8 @@ import MainLayout from "./MainLayout";
 import SignIn from "../pages/SignIn";
 import Fandoms from "../pages/Fandoms";
 import Category from "../pages/Category";
-
 import Cart from "../pages/Cart";
 import PopPreview from "../pages/PopPreview";
-import Protected from "../components/Protected";
 
 export const router = createBrowserRouter([
   {
@@ -54,14 +52,9 @@ export const router = createBrowserRouter([
           },
         ],
       },
-
       {
         path: "/cart",
-        element: (
-          <Protected>
-            <Cart />,
-          </Protected>
-        ),
+        element: <Cart />,
       },
     ],
   },
