@@ -6,6 +6,7 @@ import { fetchPops } from "../store/popAction";
 import Summary from "../components/Summary";
 import { useAuth } from "../components/useAuth";
 import { useNavigate } from "react-router-dom";
+import Button from "../assets/styles/Button";
 
 function Cart() {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ function Cart() {
 
   return (
     <div className="font-sans">
-      <div className=" text-4xl pb-10  pt-8 pl-7">MY CART</div>
+      <div className=" text-4xl pb-10  pt-8 pl-7">MY CART </div>
       {user ? (
         <div className="flex w-full h-full ">
           <CartList pops={pops.filter((pop) => pop.inCart === true)} />
@@ -31,8 +32,12 @@ function Cart() {
         </div>
       ) : (
         <div>
-          <h1>you have to log in to be able to see your cart!</h1>
-          <button onClick={() => handelClick()}>Log In</button>
+          <h1 className=" font-sans text-3xl flex justify-center pt-10 ">
+            You have to log in to be able to see your cart
+          </h1>
+          <div className="flex justify-center p-10 w-full">
+            <Button onClick={() => handelClick()} text="Log In"></Button>
+          </div>
         </div>
       )}
     </div>
