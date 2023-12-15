@@ -99,4 +99,4 @@ Visit the live demo: ![Funko Mister Toy](https://funko-mister-toy.netlify.app/)
 
 ## Contributing
 
-Contributions are welcome! Fork the repository and create a pull request with your improvements.
+Contributions are welcome!. Fork the repository and create a pull request with your improvements.
