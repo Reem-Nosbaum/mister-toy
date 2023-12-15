@@ -1,15 +1,17 @@
 import { useState } from "react";
 import Button from "../assets/styles/Button";
+import { useCart } from "./CartContext";
 
-import { useDispatch } from "react-redux";
-import { updateCart } from "../store/popAction";
 import { useNavigate } from "react-router-dom";
 
 const Card = ({ pops, startIndex, endIndex }) => {
   const [hoveredProductId, setHoveredProductId] = useState(null);
 
+  const { cart, updateCart } = useCart();
+  const cartIds = cart.map((pop) => pop.id);
+
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+
   const handleMouseOver = (popId) => {
     setHoveredProductId(popId);
   };
@@ -24,19 +26,16 @@ const Card = ({ pops, startIndex, endIndex }) => {
 
   const handleAddToCart = (pop) => {
     const updatedPop = { ...pop, inCart: true };
-    dispatch(updateCart(updatedPop));
-
-    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
-    existingCartItems.push(updatedPop);
-    localStorage.setItem("cart", JSON.stringify(existingCartItems));
+    updateCart([updatedPop, ...cart]);
   };
 
   const handleQuantityChange = (pop, quantity) => {
     const updatedPop = { ...pop, QTY: quantity };
-    dispatch(updateCart(updatedPop));
+    updateCart((prevCart) =>
+      prevCart.map((item) => (item.id === pop.id ? updatedPop : item))
+    );
 
-    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
-    const updatedCart = existingCartItems.map((item) =>
+    const updatedCart = cart.map((item) =>
       item.id === pop.id ? { ...item, QTY: quantity } : item
     );
     localStorage.setItem("cart", JSON.stringify(updatedCart));
@@ -66,19 +65,15 @@ const Card = ({ pops, startIndex, endIndex }) => {
           <h3 className="  text-lg pl-3">${pop.price}.00</h3>
           <div className="flex items-center flex-col pb-3 pt-7">
             <Button
-              text={
-                pop.inCart === "false" || pop.inCart === false
-                  ? "ADD TO CART"
-                  : "IN CART"
-              }
+              text={!cartIds.includes(pop.id) ? "ADD TO CART" : "IN CART"}
               onClick={() => handleAddToCart(pop)}
-              inCart={pop.inCart}
+              inCart={!cartIds.includes(pop.id) ? false : true}
             />
           </div>
-          {pop.inCart === true ? (
+          {cartIds.includes(pop.id) ? (
             <div className=" absolute">
               <select
-                value={pop.QTY}
+                value={cart.find((item) => item.id === pop.id)?.QTY}
                 className="top-[403px] left-8 relative rounded-full w-14 text-center cursor-pointer"
                 onChange={(e) => handleQuantityChange(pop, e.target.value)}
               >

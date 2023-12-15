@@ -7,11 +7,14 @@ import Summary from "../components/Summary";
 import { useAuth } from "../components/useAuth";
 import { useNavigate } from "react-router-dom";
 import Button from "../assets/styles/Button";
+import { useCart } from "../components/CartContext";
 
 function Cart() {
   const dispatch = useDispatch();
   const pops = useSelector((state) => state.pop.pops);
   const { user } = useAuth();
+  const { cart } = useCart();
+
   const navigate = useNavigate();
 
   const handelClick = () => {
@@ -27,8 +30,8 @@ function Cart() {
       <div className=" text-4xl pb-10  pt-8 pl-7">MY CART </div>
       {user ? (
         <div className="flex w-full h-full ">
-          <CartList pops={pops.filter((pop) => pop.inCart === true)} />
-          <Summary pops={pops.filter((pop) => pop.inCart === true)} />
+          <CartList cart={cart.filter((pop) => pop.inCart === true)} />
+          <Summary cart={cart.filter((pop) => pop.inCart === true)} />
         </div>
       ) : (
         <div>

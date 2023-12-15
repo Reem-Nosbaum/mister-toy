@@ -1,29 +1,21 @@
-import { useDispatch } from "react-redux";
 import Trash from "../assets/styles/Trash";
-import { removeCart, updateCart } from "../store/popAction";
-import { useAuth } from "./useAuth";
 
-function CartList({ pops }) {
-  const { user } = useAuth();
-  const dispatch = useDispatch();
+import { useCart } from "../components/CartContext";
+
+function CartList() {
+  const { cart, removeCartItem, updateCart } = useCart();
 
   const handleRemoveFromCart = (pop) => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    const updatedCart = cart.filter((item) => item.id !== pop.id);
-
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
-
-    const removePop = { ...pop, inCart: false, QTY: 1 };
-    dispatch(removeCart(removePop));
+    removeCartItem(pop.id);
   };
 
   const handleQuantityChange = (pop, quantity) => {
     const updatedPop = { ...pop, QTY: quantity };
-    dispatch(updateCart(updatedPop));
+    updateCart((prevCart) =>
+      prevCart.map((item) => (item.id === pop.id ? updatedPop : item))
+    );
 
-    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
-    const updatedCart = existingCartItems.map((item) =>
+    const updatedCart = cart.map((item) =>
       item.id === pop.id ? { ...item, QTY: quantity } : item
     );
     localStorage.setItem("cart", JSON.stringify(updatedCart));
@@ -39,7 +31,7 @@ function CartList({ pops }) {
             <h1 className="">TOTAL</h1>
           </div>
         </div>
-        {pops.map((pop) => (
+        {cart.map((pop) => (
           <div
             key={pop.id}
             className="flex items-center border-b border-stone-950"
@@ -58,7 +50,7 @@ function CartList({ pops }) {
             </div>
             <div className="flex w-full  justify-end space-x-52">
               <select
-                value={pop.QTY}
+                value={cart.find((item) => item.id === pop.id)?.QTY}
                 onChange={(e) => handleQuantityChange(pop, e.target.value)}
               >
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((quantity) => (

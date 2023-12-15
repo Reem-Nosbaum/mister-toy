@@ -1,25 +1,23 @@
 import { useState } from "react";
 import Button from "../assets/styles/Button";
-import { useDispatch, useSelector } from "react-redux";
-import { updateCart } from "../store/popAction";
+import { useSelector } from "react-redux";
+
 import { useParams } from "react-router-dom";
+import { useCart } from "../components/CartContext";
 
 function PopPreview() {
   const { id } = useParams();
   const pops = useSelector((state) => state.pop.pops);
+  const { cart, updateCart } = useCart();
+  const cartIds = cart.map((pop) => pop.id);
 
   const pop = pops.find((p) => p.id === parseInt(id));
 
-  const dispatch = useDispatch();
   const [selectedImage, setSelectedImage] = useState(pop.image1);
 
   const handleAddToCart = (pop) => {
     const updatedPop = { ...pop, inCart: true };
-    dispatch(updateCart(updatedPop));
-
-    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
-    existingCartItems.push(updatedPop);
-    localStorage.setItem("cart", JSON.stringify(existingCartItems));
+    updateCart([...cart, updatedPop]);
   };
 
   return (
@@ -54,13 +52,9 @@ function PopPreview() {
           <h3 className="text-2xl ">${pop.price}.00</h3>
           <div className=" pl-32">
             <Button
-              text={
-                pop.inCart === "false" || pop.inCart === false
-                  ? "ADD TO CART"
-                  : "IN CART"
-              }
+              text={!cartIds.includes(pop.id) ? "ADD TO CART" : "IN CART"}
               onClick={() => handleAddToCart(pop)}
-              inCart={pop.inCart}
+              inCart={!cartIds.includes(pop.id) ? false : true}
             />
           </div>
         </div>

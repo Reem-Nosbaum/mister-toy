@@ -2,13 +2,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/images/site-logo.svg";
 import user from "../assets/images/user.svg";
-import cart from "../assets/images/bag.svg";
+import cartImg from "../assets/images/bag.svg";
 import { DropDownMenu } from "./dropDownMenu";
 import { useSelector } from "react-redux";
+import { useCart } from "./CartContext";
 
 function NavBar() {
+  const { cart } = useCart();
+
   const pops = useSelector((state) => state.pop.pops);
-  const popsInCart = pops.filter((pop) => pop.inCart === true);
+  const popsInCart = cart.filter((pop) => pop.inCart === true);
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -132,7 +135,7 @@ function NavBar() {
             >
               {totalItemsInCart}
             </div>
-            <img src={cart} alt="cart" style={{ width: "45px" }} />
+            <img src={cartImg} alt="cart" style={{ width: "45px" }} />
           </Link>
         </div>
       </nav>

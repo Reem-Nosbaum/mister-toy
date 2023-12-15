@@ -1,22 +1,25 @@
 import Button from "../assets/styles/Button";
+import { useCart } from "../components/CartContext";
 
-function Summary({ pops }) {
+function Summary() {
+  const { cart } = useCart();
+
   let shipping = 0;
 
-  const subtotal = pops.reduce((acc, pop) => acc + pop.price * pop.QTY, 0);
-  let totalPrice = subtotal * pops.length;
+  const subtotal = cart.reduce((acc, pop) => acc + pop.price * pop.QTY, 0);
+  let totalPrice = subtotal * cart.length;
   if (totalPrice < 30) shipping += 17;
-  totalPrice = subtotal + shipping * pops.length;
+  totalPrice = subtotal + shipping * cart.length;
 
   return (
     <div className="w-[500px] h-full bg-stone-200 rounded-lg ml-52 font-sans">
       <div className="border-b border-stone-500 flex justify-between ">
         <h1 className="text-2xl pl-3 pt-3">SUMMARY</h1>
         <h1 className="font-sans_Regular text-lg pr-3 pt-3">
-          {pops.length} ITEMS
+          {cart.length} ITEMS
         </h1>
       </div>
-      {pops.map((pop) => (
+      {cart.map((pop) => (
         <div key={pop.id} className="flex justify-between"></div>
       ))}
       <div className="flex justify-between">
