@@ -11,7 +11,8 @@ function NavBar() {
   const { cart } = useCart();
 
   const pops = useSelector((state) => state.pop.pops);
-  const popsInCart = cart.filter((pop) => pop.inCart === true);
+  const popsQTYCart = cart.map((pop) => pop.QTY);
+  console.log("popsQTYCart", popsQTYCart);
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -32,9 +33,10 @@ function NavBar() {
 
   let totalItemsInCart = 0;
 
-  popsInCart.forEach((pop) => {
-    const quantity = pop.QTY;
+  popsQTYCart.forEach((pop) => {
+    const quantity = pop;
 
+    console.log("quantity", quantity);
     totalItemsInCart += Number(quantity);
   });
   const handleSearchBlur = () => {
