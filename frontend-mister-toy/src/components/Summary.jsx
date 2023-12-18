@@ -8,8 +8,13 @@ function Summary() {
 
   const subtotal = cart.reduce((acc, pop) => acc + pop.price * pop.QTY, 0);
   let totalPrice = subtotal * cart.length;
-  if (totalPrice < 30) shipping += 17;
-  totalPrice = subtotal + shipping * cart.length;
+  if (subtotal < 30) shipping += 17;
+  totalPrice = subtotal + shipping;
+
+  console.log("subtotal", subtotal);
+  console.log("totalPrice", totalPrice);
+  console.log("shipping", shipping);
+  console.log("cart length", cart.length);
 
   return (
     <div className="w-[500px] h-full bg-stone-200 rounded-lg ml-52 font-sans">
@@ -34,9 +39,7 @@ function Summary() {
       </div>
       <div className="flex pl-3 ">
         <h3 className="font-sans_Regular text-red-600 text-lg">
-          {totalPrice > 30
-            ? "shipping is free!"
-            : "after $30 shipping is free!"}
+          {subtotal > 30 ? "shipping is free!" : "after $30 shipping is free!"}
         </h3>
       </div>
       <div className="flex justify-between">
