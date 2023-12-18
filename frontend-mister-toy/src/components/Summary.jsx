@@ -9,7 +9,9 @@ function Summary() {
   const subtotal = cart.reduce((acc, pop) => acc + pop.price * pop.QTY, 0);
   let totalPrice = subtotal * cart.length;
   if (subtotal < 30) shipping += 17;
+
   totalPrice = subtotal + shipping;
+  if (cart.length === 0) totalPrice = 0;
 
   console.log("subtotal", subtotal);
   console.log("totalPrice", totalPrice);
